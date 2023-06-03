@@ -9,14 +9,15 @@
   display: flex;
   align-items: center;
 }
-@keyframes flip {
-    0% {
-      transform: translateX(0) rotateY(0);
-      transform-origin: 100% 50%;
-    }
-    100% {
-      transform: translateX(100%) rotate
-    }
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .hero-box {
   display: flex;
@@ -24,7 +25,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 5rem 10rem 5rem;
-  animation: flip 1s ease-in-out;
+  animation: pop-in 0.5s ease-in-out;
 
   &__side1 {
     flex-direction: column;

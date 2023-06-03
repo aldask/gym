@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 import { heroContent } from "../../Data/heroData";
 
 function Hero() {
+  const initialContent = heroContent[0];
+
   const [circleCounter, setCircleCounter] = useState(3.6);
-  const [contentId, setContentId] = useState(heroContent[0].id);
-  const [contentTitle, setContentTitle] = useState(heroContent[0].title);
-  const [contentText, setContentText] = useState(heroContent[0].text);
-  const [contentImage, setContentImage] = useState(heroContent[0].picture);
+  const [contentId, setContentId] = useState(initialContent.id);
+  const [contentTitle, setContentTitle] = useState(initialContent.title);
+  const [contentText, setContentText] = useState(initialContent.text);
+  const [contentImage, setContentImage] = useState(initialContent.picture);
   const [key, setKey] = useState(0);
 
   useEffect(() => {
@@ -34,19 +36,19 @@ function Hero() {
     };
   }, [circleCounter]);
 
-
-//
+  //Content setting
   useEffect(() => {
-    setContentTitle(heroContent[contentId].title);
-    setContentText(heroContent[contentId].text);
-    setContentImage(heroContent[contentId].picture);
+    const { title, text, picture } = heroContent[contentId];
+    setContentTitle(title);
+    setContentText(text);
+    setContentImage(picture);
   }, [contentId]);
 
   return (
     <section className="hero">
       <div className="container">
-        <div className="hero-box">
-          <div className="hero-box__side1" key={key}>
+        <div className="hero-box" key={key}>
+          <div className="hero-box__side1">
             <h1 className="hero-box__side1--title">
               {contentTitle} <span className="background">workout</span>
             </h1>
