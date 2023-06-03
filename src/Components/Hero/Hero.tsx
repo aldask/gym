@@ -17,7 +17,7 @@ function Hero() {
     ) as HTMLElement;
 
     const interval = setInterval(() => {
-      setCircleCounter((prevCounter) => prevCounter + 3.6);
+      setCircleCounter((prevCounter) => prevCounter + 1);
 
       loadBar.style.background = `conic-gradient(
         rgb(102, 102, 102) ${circleCounter}deg,
@@ -25,7 +25,7 @@ function Hero() {
       )`;
 
       if (circleCounter >= 360) {
-        setCircleCounter(3.6);
+        setCircleCounter(0);
         setContentId((prevId) => (prevId + 1) % heroContent.length);
         setKey((prevKey) => prevKey + 1);
       }
