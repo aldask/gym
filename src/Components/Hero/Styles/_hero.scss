@@ -9,18 +9,27 @@
   display: flex;
   align-items: center;
 }
+@keyframes flip {
+    0% {
+      transform: translateX(0) rotateY(0);
+      transform-origin: 100% 50%;
+    }
+    100% {
+      transform: translateX(100%) rotate
+    }
+}
 .hero-box {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 5rem 10rem 5rem;
+  animation: flip 1s ease-in-out;
 
   &__side1 {
     flex-direction: column;
     max-width: 45%;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
     &--title {
       text-transform: uppercase;
       font-size: 5rem;

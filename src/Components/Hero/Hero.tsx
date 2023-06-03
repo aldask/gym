@@ -1,8 +1,13 @@
-import pic from "./Styles/1.jpg";
 import { useState, useEffect } from "react";
+import { heroContent } from "../../Data/heroData";
 
 function Hero() {
   const [circleCounter, setCircleCounter] = useState(3.6);
+  const [contentId, setContentId] = useState(heroContent[0].id);
+  const [contentTitle, setContentTitle] = useState(heroContent[0].title);
+  const [contentText, setContentText] = useState(heroContent[0].text);
+  const [contentImage, setContentImage] = useState(heroContent[0].picture);
+  const [key, setKey] = useState(0);
 
   useEffect(() => {
     const loadBar = document.querySelector(
@@ -17,10 +22,10 @@ function Hero() {
         rgb(0, 0, 0) 0deg
       )`;
 
-      console.log(circleCounter);
-
       if (circleCounter >= 360) {
         setCircleCounter(3.6);
+        setContentId((prevId) => (prevId + 1) % heroContent.length);
+        setKey((prevKey) => prevKey + 1);
       }
     }, 50);
 
@@ -29,17 +34,23 @@ function Hero() {
     };
   }, [circleCounter]);
 
+
+//
+  useEffect(() => {
+    setContentTitle(heroContent[contentId].title);
+    setContentText(heroContent[contentId].text);
+    setContentImage(heroContent[contentId].picture);
+  }, [contentId]);
+
   return (
     <section className="hero">
       <div className="container">
         <div className="hero-box">
-          <div className="hero-box__side1">
+          <div className="hero-box__side1" key={key}>
             <h1 className="hero-box__side1--title">
-              Teambuilding in a <span className="background">workout</span>
+              {contentTitle} <span className="background">workout</span>
             </h1>
-            <p className="hero-box__side1--text">
-              Gather your team to a group workout!
-            </p>
+            <p className="hero-box__side1--text">{contentText}</p>
             <div className="hero-box__side1--loadbar">
               <div className="hero-box__side1--loadbar--circle">
                 <div className="hero-box__side1--loadbar--circle--inner"></div>
@@ -47,7 +58,7 @@ function Hero() {
             </div>
           </div>
           <div className="hero-box__side2">
-            <img src={pic} alt="img"></img>
+            <img src={contentImage} alt="img" />
           </div>
         </div>
       </div>
