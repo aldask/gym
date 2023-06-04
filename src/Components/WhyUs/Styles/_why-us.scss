@@ -1,0 +1,37 @@
+.why-us {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.why-us__box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &--title {
+    text-transform: uppercase;
+    inline-size: 35%;
+    margin-bottom: 1.5rem;
+  }
+  &--content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    &--element {
+      padding: 3.2rem 2.4rem;
+      border-radius: 10px;
+      background-color: rgba(175, 175, 175, 0.473);
+
+      &--icon {
+        margin-bottom: 1rem;
+      }
+      &--title {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
