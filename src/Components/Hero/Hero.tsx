@@ -29,7 +29,7 @@ function Hero() {
         setContentId((prevId) => (prevId + 1) % heroContent.length);
         setKey((prevKey) => prevKey + 1);
       }
-    }, 50);
+    }, 25);
 
     return () => {
       clearInterval(interval);
@@ -46,7 +46,7 @@ function Hero() {
 
   return (
     <section className="hero">
-      <div className="container">
+      <div className="container-hero">
         <div className="hero-box" key={key}>
           <div className="hero-box__side1">
             <h1 className="hero-box__side1--title">
