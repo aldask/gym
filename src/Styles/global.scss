@@ -1,0 +1,46 @@
+@import "./reset";
+@import "./fonts";
+
+//Components
+@import "../Components/Hero/Styles/hero";
+@import "../Components/WhyUs/Styles/why-us";
+@import "../Components/Subscription/Styles/subscribtion";
+
+//Global
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $text-font;
+  background-color: #fff;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 12.5rem;
+
+  @media screen and (max-width: 990px) {
+    padding: 0 1.5rem;
+  }
+}
+.container-hero {
+  margin: 0 auto;
+  padding: 0 12.5rem;
+
+  @media screen and (max-width: 990px) {
+    padding: 0;
+  }
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: $title-font;
+  color: rgb(37, 37, 37);
+}
+p {
+  font-size: 1rem;
+  font-family: $text-font;
+}
+.background {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+}

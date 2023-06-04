@@ -1,7 +1,8 @@
-import React from "react";
+import "./Styles/global.scss";
+import HomePage from "./Pages/HomePage";
 
 function App() {
-  return <>clean</>;
+  return <HomePage />;
 }
 
 export default App;
