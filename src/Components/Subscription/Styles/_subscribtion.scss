@@ -1,0 +1,18 @@
+.subscribtion {
+  background: linear-gradient(98deg, #cad4e0 5%, #3c4857 60%, #23242493 90%);
+}
+.subscribtion__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 20rem;
+
+  &--title {
+    margin-bottom: 1.5rem;
+  }
+  &--text {
+    margin-bottom: 1.5rem;
+  }
+}

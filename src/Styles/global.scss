@@ -3,6 +3,8 @@
 
 //Components
 @import "../Components/Hero/Styles/hero";
+@import "../Components/WhyUs/Styles/why-us";
+@import "../Components/Subscription/Styles/subscribtion";
 
 //Global
 body {
@@ -13,14 +15,17 @@ body {
 }
 .container {
   margin: 0 auto;
-  padding: 0 2.5rem;
+  padding: 0 12.5rem;
+
+  @media screen and (max-width: 990px) {
+    padding: 0 1.5rem;
+  }
 }
 .container-hero {
   margin: 0 auto;
-  padding: 0 2.5rem;
+  padding: 0 12.5rem;
 
   @media screen and (max-width: 990px) {
-    margin: 0;
     padding: 0;
   }
 }

@@ -49,7 +49,7 @@ function Hero() {
       <div className="container-hero">
         <div className="hero-box" key={key}>
           <div className="hero-box__side1">
-            <h1 className="hero-box__side1--title">
+            <h1 className="hero-box__side1--title ">
               {contentTitle} <span className="background">workout</span>
             </h1>
             <p className="hero-box__side1--text">{contentText}</p>
