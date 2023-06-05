@@ -1,0 +1,58 @@
+.subscription {
+  background: linear-gradient(120deg, #ff373a 40%, #ff8385 90%);
+  padding: 3rem 0;
+
+  .subscription__box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+
+    &--title {
+      margin-bottom: 1.5rem;
+      color: #333333;
+    }
+
+    &--text {
+      margin-bottom: 1.5rem;
+      color: #666666;
+
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #333333;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &--inputs {
+      display: flex;
+      align-items: center;
+
+      &--input {
+        margin-right: 1rem;
+        padding: 1rem 1.2rem 1rem 1rem;
+        border: none;
+        border-radius: 5px;
+        color: #333333;
+        background-color: #f7f7f7;
+      }
+
+      &--submit {
+        padding: 1rem;
+        background-color: #ff373a;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
