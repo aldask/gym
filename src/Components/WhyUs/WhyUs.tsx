@@ -1,4 +1,9 @@
-import test from "../../Images/Why-Us/test.png";
+import Icon1 from "../../Images/Why-Us/icon1.svg";
+import Icon2 from "../../Images/Why-Us/icon2.svg";
+import Icon3 from "../../Images/Why-Us/icon3.svg";
+import Icon4 from "../../Images/Why-Us/icon4.svg";
+import Icon5 from "../../Images/Why-Us/icon5.svg";
+import Icon6 from "../../Images/Why-Us/icon6.svg";
 import GridElement from "../GridElement";
 
 function WhyUs() {
@@ -11,34 +16,35 @@ function WhyUs() {
           </div>
           <div className="why-us__box--content">
             <GridElement
-              iconProp={test}
+              iconProp={Icon1}
               titleProp="Variety of locations"
-              textProp="Lorem ipsum dolor sit amet"
+              textProp="Choose from multiple convenient fitness center locations that suit your preferences."
             />
             <GridElement
-              iconProp={test}
+              iconProp={Icon2}
               titleProp="24/7 open"
-              textProp="Lorem ipsum dolor sit amet"
+              textProp="
+              24/7 Open: Fitness on your schedule, anytime, anywhere."
             />
             <GridElement
-              iconProp={test}
+              iconProp={Icon3}
               titleProp="Professional coaches"
-              textProp="Lorem ipsum dolor sit amet"
+              textProp="Our experienced and knowledgeable fitness trainers provide expert guidance and support to help you achieve your goals effectively."
             />
             <GridElement
-              iconProp={test}
+              iconProp={Icon4}
               titleProp="Spacious workout zones"
-              textProp="Lorem ipsum dolor sit amet"
+              textProp="Enjoy ample space in our fitness areas, providing you with room to exercise comfortably and move freely during your workouts."
             />
             <GridElement
-              iconProp={test}
-              titleProp="Lorem5"
-              textProp="Lorem ipsum dolor sit amet"
+              iconProp={Icon5}
+              titleProp="New Equipment"
+              textProp="Experience top-of-the-line fitness equipment, meticulously maintained and regularly updated to ensure a modern and effective workout experience."
             />
             <GridElement
-              iconProp={test}
-              titleProp="lorems5s"
-              textProp="Lorem ipsum dolor sit amet"
+              iconProp={Icon6}
+              titleProp="Friendly Environment"
+              textProp="Our fitness centers foster a welcoming and inclusive atmosphere, where you'll feel comfortable and supported on your fitness journey."
             />
           </div>
         </div>
