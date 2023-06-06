@@ -9,6 +9,30 @@ function GroupTrainings() {
             <div className="image-container">
               <img src={test} alt="img" />
               <div className="text-overlay">
+                <a href="#">FIRST</a>
+              </div>
+            </div>
+          </div>
+          <div className="slider-element">
+            <div className="image-container">
+              <img src={test} alt="img" />
+              <div className="text-overlay">
+                <a href="#">Group trainings</a>
+              </div>
+            </div>
+          </div>
+          <div className="slider-element">
+            <div className="image-container">
+              <img src={test} alt="img" />
+              <div className="text-overlay">
+                <a href="#">Group trainings</a>
+              </div>
+            </div>
+          </div>
+          <div className="slider-element">
+            <div className="image-container">
+              <img src={test} alt="img" />
+              <div className="text-overlay">
                 <a href="#">Group trainings</a>
               </div>
             </div>
@@ -34,6 +58,14 @@ function GroupTrainings() {
               <img src={test} alt="img" />
               <div className="text-overlay">
                 <a href="#">Group trainings</a>
+              </div>
+            </div>
+          </div>
+          <div className="slider-element">
+            <div className="image-container">
+              <img src={test} alt="img" />
+              <div className="text-overlay">
+                <a href="#">LAST</a>
               </div>
             </div>
           </div>
