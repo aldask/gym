@@ -18,10 +18,11 @@ function Subscription() {
           <div className="subscription__box--inputs">
             <input
               className="subscription__box--inputs--input"
-              placeholder="example@email.com"
+              placeholder="Enter Your Email"
+              type="email"
             />
             <button className="subscription__box--inputs--submit">
-              Submit
+              Subscribe
             </button>
           </div>
         </div>
