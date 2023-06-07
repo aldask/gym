@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import test from "../../Images/GroupTrainings/test.jpg";
+import SliderElement from "../SliderElement";
 
 function GroupTrainings() {
   useEffect(() => {
@@ -16,65 +17,20 @@ function GroupTrainings() {
       const transformedCount = elementCount / 2;
       const keyframesValue = `translateX(calc(-400px * ${transformedCount}))`;
       element.style.transform = keyframesValue;
-
-      console.log(elementCount);
-      console.log(keyframesValue);
     }
   }, []);
 
   return (
-    <div className="group-trainings">
+    <section className="group-trainings">
       <div className="group-trainings__slider">
-        <div className="group-trainings__slider--element">
-          <a href="#">
-            <img src={test} alt="training title" />
-            <h2 className="group-trainings__slider--element--text">
-              Group trainings
-            </h2>
-          </a>
-        </div>
-        <div className="group-trainings__slider--element">
-          <a href="#">
-            <img src={test} alt="training title" />
-            <h2 className="group-trainings__slider--element--text">
-              Group trainings
-            </h2>
-          </a>
-        </div>
-        <div className="group-trainings__slider--element">
-          <a href="#">
-            <img src={test} alt="training title" />
-            <h2 className="group-trainings__slider--element--text">
-              Group trainings
-            </h2>
-          </a>
-        </div>
-        <div className="group-trainings__slider--element">
-          <a href="#">
-            <img src={test} alt="training title" />
-            <h2 className="group-trainings__slider--element--text">
-              Group trainings
-            </h2>
-          </a>
-        </div>
-        <div className="group-trainings__slider--element">
-          <a href="#">
-            <img src={test} alt="training title" />
-            <h2 className="group-trainings__slider--element--text">
-              Group trainings
-            </h2>
-          </a>
-        </div>
-        <div className="group-trainings__slider--element">
-          <a href="#">
-            <img src={test} alt="training title" />
-            <h2 className="group-trainings__slider--element--text">
-              Group trainings
-            </h2>
-          </a>
-        </div>
+        <SliderElement urlProp="test" imageProp={test} contentProp="testtttt" />
+        <SliderElement urlProp="test" imageProp={test} contentProp="testtttt" />
+        <SliderElement urlProp="test" imageProp={test} contentProp="testtttt" />
+        <SliderElement urlProp="test" imageProp={test} contentProp="testtttt" />
+        <SliderElement urlProp="test" imageProp={test} contentProp="testtttt" />
+        <SliderElement urlProp="test" imageProp={test} contentProp="testtttt" />
       </div>
-    </div>
+    </section>
   );
 }
 
