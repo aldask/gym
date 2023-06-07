@@ -1,77 +1,80 @@
+import React, { useEffect } from "react";
 import test from "../../Images/GroupTrainings/test.jpg";
 
 function GroupTrainings() {
+  useEffect(() => {
+    const elementCount = document.querySelectorAll(
+      ".group-trainings__slider--element"
+    ).length;
+    const element = document.querySelector(
+      ".group-trainings__slider"
+    ) as HTMLElement;
+
+    if (element) {
+      element.style.width = `calc(400px * ${elementCount})`;
+
+      const transformedCount = elementCount / 2;
+      const keyframesValue = `translateX(calc(-400px * ${transformedCount}))`;
+      element.style.transform = keyframesValue;
+
+      console.log(elementCount);
+      console.log(keyframesValue);
+    }
+  }, []);
+
   return (
-    <section className="group-trainings">
-      <div className="group-trainings__box">
-        <div className="group-trainings__box--slider">
-          <div className="slider-element">
-            <div className="image-container">
-              <img src={test} alt="img" />
-              <div className="text-overlay">
-                <a href="#">FIRST</a>
-              </div>
-            </div>
-          </div>
-          <div className="slider-element">
-            <div className="image-container">
-              <img src={test} alt="img" />
-              <div className="text-overlay">
-                <a href="#">Group trainings</a>
-              </div>
-            </div>
-          </div>
-          <div className="slider-element">
-            <div className="image-container">
-              <img src={test} alt="img" />
-              <div className="text-overlay">
-                <a href="#">Group trainings</a>
-              </div>
-            </div>
-          </div>
-          <div className="slider-element">
-            <div className="image-container">
-              <img src={test} alt="img" />
-              <div className="text-overlay">
-                <a href="#">Group trainings</a>
-              </div>
-            </div>
-          </div>
-          <div className="slider-element">
-            <div className="image-container">
-              <img src={test} alt="img" />
-              <div className="text-overlay">
-                <a href="#">Group trainings</a>
-              </div>
-            </div>
-          </div>
-          <div className="slider-element">
-            <div className="image-container">
-              <img src={test} alt="img" />
-              <div className="text-overlay">
-                <a href="#">Group trainings</a>
-              </div>
-            </div>
-          </div>
-          <div className="slider-element">
-            <div className="image-container">
-              <img src={test} alt="img" />
-              <div className="text-overlay">
-                <a href="#">Group trainings</a>
-              </div>
-            </div>
-          </div>
-          <div className="slider-element">
-            <div className="image-container">
-              <img src={test} alt="img" />
-              <div className="text-overlay">
-                <a href="#">LAST</a>
-              </div>
-            </div>
-          </div>
+    <div className="group-trainings">
+      <div className="group-trainings__slider">
+        <div className="group-trainings__slider--element">
+          <a href="#">
+            <img src={test} alt="training title" />
+            <h2 className="group-trainings__slider--element--text">
+              Group trainings
+            </h2>
+          </a>
+        </div>
+        <div className="group-trainings__slider--element">
+          <a href="#">
+            <img src={test} alt="training title" />
+            <h2 className="group-trainings__slider--element--text">
+              Group trainings
+            </h2>
+          </a>
+        </div>
+        <div className="group-trainings__slider--element">
+          <a href="#">
+            <img src={test} alt="training title" />
+            <h2 className="group-trainings__slider--element--text">
+              Group trainings
+            </h2>
+          </a>
+        </div>
+        <div className="group-trainings__slider--element">
+          <a href="#">
+            <img src={test} alt="training title" />
+            <h2 className="group-trainings__slider--element--text">
+              Group trainings
+            </h2>
+          </a>
+        </div>
+        <div className="group-trainings__slider--element">
+          <a href="#">
+            <img src={test} alt="training title" />
+            <h2 className="group-trainings__slider--element--text">
+              Group trainings
+            </h2>
+          </a>
+        </div>
+        <div className="group-trainings__slider--element">
+          <a href="#">
+            <img src={test} alt="training title" />
+            <h2 className="group-trainings__slider--element--text">
+              Group trainings
+            </h2>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
