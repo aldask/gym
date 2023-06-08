@@ -31,10 +31,6 @@ function GroupTrainings() {
       element.style.width = `calc(400px * ${elementCount})`;
 
       const transformedCount = elementCount / 2;
-      const keyframesValue = `translateX(calc(-400px * ${transformedCount}))`;
-      element.style.transform = keyframesValue;
-      console.log(elementCount);
-      console.log(keyframesValue);
     }
   }, []);
 
