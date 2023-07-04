@@ -1,8 +1,9 @@
 .locations {
   background: linear-gradient(135deg, #ff4e50 0%, #fc913a 100%);
 }
-.location-box {
-  padding: 10rem 3rem;
+
+.locations__box {
+  padding: 1rem 3rem;
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -16,11 +17,11 @@
     flex-direction: column;
     gap: 15px;
 
-    &--text {
+    &__text {
       color: white;
     }
 
-    &--buttons {
+    &__buttons {
       display: flex;
       flex-direction: row;
       gap: 1rem;
@@ -28,7 +29,8 @@
       button {
         padding: 10px 35px;
         font-size: 1.1rem;
-        font-weight: 500;
+        font-weight: 600;
+        text-transform: uppercase;
       }
 
       &--explore {
@@ -52,6 +54,49 @@
           color: black;
           background-color: white;
           border: 1px solid #ffffff69;
+        }
+      }
+    }
+  }
+
+  &__side2 {
+    display: flex;
+    flex-direction: column;
+
+    &__gym-box {
+      background-color: white;
+      border-radius: 5px;
+
+      &__img {
+      }
+
+      &__content {
+        padding: 1rem 1rem;
+
+        &--name {
+          padding: 0 0 1rem;
+        }
+
+        &--perks {
+          padding: 0 0 1rem;
+        }
+
+        &--about {
+          transition: all 0.2s ease-in-out;
+          button {
+            background: rgba(0, 0, 0, 0);
+            width: 100%;
+            padding: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.438);
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+          &:hover {
+            color: black;
+            background-color: rgb(185, 185, 185);
+            border: 1px solid rgba(0, 0, 0, 0);
+          }
         }
       }
     }
