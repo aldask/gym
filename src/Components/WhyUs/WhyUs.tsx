@@ -23,8 +23,7 @@ function WhyUs() {
             <GridElement
               iconProp={Icon2}
               titleProp="24/7 open"
-              textProp="
-              24/7 Open: Fitness on your schedule, anytime, anywhere."
+              textProp="Fitness on your schedule, anytime, anywhere."
             />
             <GridElement
               iconProp={Icon3}
