@@ -70,7 +70,7 @@ function Locations() {
             />
             <div
               className="locations__box__side2__slider-wrapper"
-              style={{ transform: `translateX(-${450 * currentSlide}px)` }}
+              style={{ transform: `translateX(-${425 * currentSlide}px)` }}
             >
               {sliders.map((slider, index) => (
                 <Slider
