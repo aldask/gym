@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowCircleLeft,
   faArrowCircleRight,
-  faCircle,
+  faCircleDot,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Carousel = () => {
@@ -52,10 +52,7 @@ const Carousel = () => {
         }`}
         onClick={() => updateIndex(index)}
       >
-        <FontAwesomeIcon
-          icon={faCircle}
-          className="material-symbols-outlined"
-        />
+        <FontAwesomeIcon icon={faCircleDot} />
       </button>
     ));
   };
@@ -64,7 +61,7 @@ const Carousel = () => {
   const isNextDisabled = activeIndex === carouselItems.length - 1;
 
   return (
-    <div className="carousel">
+    <section className="carousel">
       <div
         className="carousel__slide-container"
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
@@ -73,32 +70,30 @@ const Carousel = () => {
           <Slide key={index} item={item} width="100%" />
         ))}
       </div>
-      <div className="carousel__carousel-buttons">
+      <div className="carousel__buttons">
         <button
-          className="carousel__button-arrow"
           onClick={() => updateIndex(activeIndex - 1)}
           disabled={isPreviousDisabled}
         >
           <FontAwesomeIcon
             icon={faArrowCircleLeft}
-            className="material-symbols-outlined"
+            className="carousel__buttons--big"
           />
         </button>
 
         <div className="carousel__indicators">{renderIndicators()}</div>
 
         <button
-          className="carousel__button-arrow"
           onClick={() => updateIndex(activeIndex + 1)}
           disabled={isNextDisabled}
         >
           <FontAwesomeIcon
             icon={faArrowCircleRight}
-            className="material-symbols-outlined"
+            className="carousel__buttons--big"
           />
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
