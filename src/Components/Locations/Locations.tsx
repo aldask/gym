@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Carousel from "../Carousel";
+import Carousel from "../Carousel/Carousel";
 
 function Locations() {
 
