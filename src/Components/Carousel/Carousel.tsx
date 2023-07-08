@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Slide from "./Slide";
-import pilaite from "../Images/Locations/pilaite.jpg";
+import { slides} from "../../Data/locationsData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowCircleLeft,
@@ -11,40 +11,13 @@ import {
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const carouselItems = [
-    {
-      locationPic: pilaite,
-      gymName: "Pilaite",
-      gymStreet: "axcvxsdfsdfsdfcvxcvs",
-      gymPerks: "perks here",
-    },
-    {
-      locationPic: pilaite,
-      gymName: "Pilaite",
-      gymStreet: "axcvxcsdfsdfsdfvxcvs",
-      gymPerks: "perks here",
-    },
-    {
-      locationPic: pilaite,
-      gymName: "Pilaite",
-      gymStreet: "axcvxcvsdfsfdxcvs",
-      gymPerks: "perks here",
-    },
-    {
-      locationPic: pilaite,
-      gymName: "Pilaite",
-      gymStreet: "axcvxcvsdfsfdxcvs",
-      gymPerks: "perks here",
-    },
-  ];
-
   const updateIndex = (newIndex: number) => {
-    newIndex = Math.max(0, Math.min(newIndex, carouselItems.length - 1));
+    newIndex = Math.max(0, Math.min(newIndex, slides.length - 1));
     setActiveIndex(newIndex);
   };
 
   const renderIndicators = () => {
-    return carouselItems.map((_, index) => (
+    return slides.map((_, index) => (
       <button
         key={index}
         className={`carousel__indicator-button ${
@@ -58,7 +31,7 @@ const Carousel = () => {
   };
 
   const isPreviousDisabled = activeIndex === 0;
-  const isNextDisabled = activeIndex === carouselItems.length - 1;
+  const isNextDisabled = activeIndex === slides.length - 1;
 
   return (
     <section className="carousel">
@@ -66,7 +39,7 @@ const Carousel = () => {
         className="carousel__slide-container"
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
-        {carouselItems.map((item, index) => (
+        {slides.map((item, index) => (
           <Slide key={index} item={item} width="100%" />
         ))}
       </div>
