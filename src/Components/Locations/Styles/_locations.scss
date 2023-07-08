@@ -80,6 +80,16 @@
     overflow: hidden;
     padding: 1px;
     position: relative;
-    width: 400px;
+    width: 480px;
+
+    @media screen and (max-width: 480px) {
+      width: 410px;
+    }
+    @media screen and (max-width: 435px) {
+      width: 330px;
+    }
+    @media screen and (max-width: 355px) {
+      width: 280px;
+    }
   }
 }
