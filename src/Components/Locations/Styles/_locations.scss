@@ -11,11 +11,24 @@
   justify-content: space-between;
   width: 100%;
 
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+    padding: 5rem 1rem;
+  }
+
   &__side1 {
     width: 40%;
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    @media screen and (max-width: 1300px) {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 2rem;
+    }
 
     &__text {
       color: white;
@@ -67,81 +80,97 @@
     overflow: hidden;
     padding: 1px;
     position: relative;
-    width: 435px;
+    width: 400px;
+  }
+}
 
-    &__slider-wrapper {
-      display: flex;
-      flex-direction: row;
-      max-width: calc(425px * 3);
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(calc(-425px * #{currentSlide}));
-      gap: 20px;
-      padding: 10px;
-    }
+.carousel {
+  &__slide-container {
+    white-space: nowrap;
+    transition: transform 0.3s;
+    width: 400px;
+  }
 
-    &__gym-box {
-      background-color: white;
-      width: 435px;
-      height: 465px;
-      position: relative;
-      border-radius: 5px;
+  &__carousel-buttons {
+    display: flex;
+    justify-content: space-evenly;
 
-      &__img {
-        img {
-          object-fit: cover;
-          width: 100%;
-          height: 240px;
-        }
-      }
-
-      &__content {
-        padding: 1rem;
-
-        &--name {
-          margin-bottom: 1rem;
-        }
-
-        &--perks {
-          margin-bottom: 1rem;
-        }
-
-        &--about {
-          transition: all 0.2s ease-in-out;
-
-          button {
-            width: 100%;
-            padding: 20px;
-            border: 1px solid rgba(0, 0, 0, 0.438);
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            background-color: transparent;
-
-            &:hover {
-              color: black;
-              background-color: rgb(185, 185, 185);
-              border: 1px solid rgba(0, 0, 0, 0);
-            }
-          }
-        }
-      }
-    }
-
-    .arrow {
-      position: absolute;
-      top: 45%;
-      transform: translateY(-50%);
-      font-size: 1.5rem;
-      color: rgb(247, 247, 247);
+    &__button-arrow {
+      background: none;
+      border: none;
+      margin-top: 500px;
       cursor: pointer;
-      z-index: 1;
+      margin-top: 20px;
 
-      &:first-child {
-        left: 0;
+      button {
+        background: none;
       }
+    }
+  }
 
-      &:last-child {
-        right: 0;
+  &__indicators {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+
+    &__indicator-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    &__indicator-button--active {
+      color: #ffffff;
+    }
+  }
+}
+
+
+////////////////
+
+.slide {
+  flex-direction: column;
+  display: inline-flex;
+  height: 470px;
+  width: 400px;
+  background-color: #e0e0e0;
+
+  &__img {
+    width: 100%;
+    height: 250px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    padding: 1rem;
+
+    &--name {
+      margin-bottom: 1rem;
+    }
+
+    &--perks {
+      margin-bottom: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.438);
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      background-color: transparent;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: black;
+        background-color: rgb(185, 185, 185);
+        border: 1px solid rgba(0, 0, 0, 0);
       }
     }
   }

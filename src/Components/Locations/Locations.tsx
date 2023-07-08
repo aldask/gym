@@ -1,45 +1,7 @@
 import { useState } from "react";
-import pilaite from "../../Images/Locations/pilaite.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleArrowLeft,
-  faCircleArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
-import Slider from "../Slider";
+import Carousel from "../Carousel";
 
 function Locations() {
-  const sliders = [
-    {
-      locationPic: pilaite,
-      gymName: "Pilaite",
-      gymStreet: "axcvxcvxcvs",
-      gymPerks: "perks here",
-    },
-    {
-      locationPic: pilaite,
-      gymName: "tessss",
-      gymStreet: "asdasdasd",
-      gymPerks: "perks here",
-    },
-    {
-      locationPic: pilaite,
-      gymName: "Pdasdae",
-      gymStreet: "aadsasd",
-      gymPerks: "perks here",
-    },
-  ];
-
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % sliders.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide(
-      (prevSlide) => (prevSlide - 1 + sliders.length) % sliders.length
-    );
-  };
 
   return (
     <section className="locations">
@@ -63,31 +25,7 @@ function Locations() {
             </div>
           </div>
           <div className="locations__box__side2">
-            <FontAwesomeIcon
-              icon={faCircleArrowLeft}
-              className="arrow"
-              onClick={prevSlide}
-            />
-            <div
-              className="locations__box__side2__slider-wrapper"
-              style={{ transform: `translateX(-${425 * currentSlide}px)` }}
-            >
-              {sliders.map((slider, index) => (
-                <Slider
-                  key={index}
-                  locationPic={slider.locationPic}
-                  gymName={slider.gymName}
-                  gymStreet={slider.gymStreet}
-                  gymPerks={slider.gymPerks}
-                  active={index === currentSlide}
-                />
-              ))}
-            </div>
-            <FontAwesomeIcon
-              icon={faCircleArrowRight}
-              className="arrow"
-              onClick={nextSlide}
-            />
+            <Carousel />
           </div>
         </div>
       </div>
