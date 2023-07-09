@@ -17,7 +17,8 @@ export const slides: SlideContent[] = [
     locationPic: Savanoriai,
     gymName: "Savanoriai",
     gymStreet: "Savanorių pr. 168, Kaunas",
-    gymPerks: "FREE PARKING, GROUP TRAININGS, PERSONAL TRAINING, BASKETBALL MACHINE",
+    gymPerks:
+      "FREE PARKING, GROUP TRAININGS, PERSONAL TRAINING, BASKETBALL MACHINE",
   },
   {
     locationPic: Vienuolio,
@@ -29,7 +30,8 @@ export const slides: SlideContent[] = [
     locationPic: Pilaite,
     gymName: "Pilaitė",
     gymStreet: "Vydūno g. 2, Vilnius",
-    gymPerks: "FREE PARKING, PERSONAL TRAINING, BASKETBALL MACHINE, FOOTBALL TABLE",
+    gymPerks:
+      "FREE PARKING, PERSONAL TRAINING, BASKETBALL MACHINE, FOOTBALL TABLE",
   },
   {
     locationPic: Europa,
@@ -41,12 +43,14 @@ export const slides: SlideContent[] = [
     locationPic: Banginis,
     gymName: "Banginis",
     gymStreet: "P. Lukšio g. 34, Vilnius",
-    gymPerks: "FREE PARKING, PERSONAL TRAINING, GROUP TRAININGS, FOOTBALL TABLE",
+    gymPerks:
+      "FREE PARKING, PERSONAL TRAINING, GROUP TRAININGS, FOOTBALL TABLE",
   },
   {
     locationPic: Antakalnis,
     gymName: "Antakalnis",
     gymStreet: "Antakalnio g. 37, Vilnius",
-    gymPerks: "FREE PARKING, PERSONAL TRAINING, FOOTBALL TABLE, SPACIOUS CARDIO AREA",
+    gymPerks:
+      "FREE PARKING, PERSONAL TRAINING, FOOTBALL TABLE, SPACIOUS CARDIO AREA",
   },
 ];
