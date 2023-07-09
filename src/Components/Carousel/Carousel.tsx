@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Slide from "./Slide";
-import { slides} from "../../Data/locationsData";
+import { slides } from "../../Data/locationsData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowCircleLeft,
