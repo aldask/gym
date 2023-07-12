@@ -3,6 +3,7 @@ import Hero from "../Components/Hero/Hero";
 import Locations from "../Components/Locations/Locations";
 import Subscription from "../Components/Subscription/Subscription";
 import WhyUs from "../Components/WhyUs/WhyUs";
+import Footer from "../Components/Footer/Footer";
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
       <Subscription />
       <GroupTrainings />
       <Locations />
+      <Footer />
     </>
   );
 }
