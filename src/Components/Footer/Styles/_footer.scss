@@ -1,0 +1,26 @@
+.footer {
+    position: relative;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__top {
+        display: flex;
+        background-color: aqua;
+        gap: 10px;
+        
+        &--1row {
+            display: flex;
+        }
+
+        &--1col {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+}
