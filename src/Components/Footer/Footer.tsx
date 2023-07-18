@@ -10,32 +10,66 @@ function Footer() {
               <p>logo2</p>
             </div>
             <div className="footer-box__top--1col">
-              <p>items</p>
-              <p>items</p>
-              <p>items</p>
-              <p>items</p>
+              <ul>
+                <li>Trainings</li>
+                <li>
+                  <a href="url">Free trial training</a>
+                </li>
+                <li>
+                  <a href="url">All trainings</a>
+                </li>
+                <li>
+                  <a href="url">All trainers</a>
+                </li>
+              </ul>
             </div>
             <div className="footer-box__top--1col">
-              <p>items</p>
-              <p>items</p>
-              <p>items</p>
-              <p>items</p>
+              <ul>
+                <li>Additional info</li>
+                <li>
+                  <a href="url">All Clubs</a>
+                </li>
+                <li>
+                  <a href="url">Prices</a>
+                </li>
+                <li>
+                  <a href="url">News & Blog</a>
+                </li>
+              </ul>
             </div>
             <div className="footer-box__top--1col">
-              <p>items</p>
-              <p>items</p>
-              <p>items</p>
-              <p>items</p>
+              <ul>
+                <li>Company</li>
+                <li>
+                  <a href="url">Contacts</a>
+                </li>
+                <li>
+                  <a href="url">Carrer</a>
+                </li>
+              </ul>
             </div>
             <div className="footer-box__top--1col">
-              <p>items</p>
-              <p>items</p>
-              <p>items</p>
-              <p>items</p>
+              <ul>
+                <li>Connect</li>
+                <li>
+                  <a href="url">Instagram</a>
+                </li>
+                <li>
+                  <a href="url">Facebook</a>
+                </li>
+                <li>
+                  <a href="url">Email us</a>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="footer-box__bottom">
-            <div className="footer-box__bottom-1row">terms and policy</div>
+            <div className="footer-box__bottom--1row">
+              <p>© Iron Gym. 2023</p>
+              <p>Terms of Services</p>
+              <p>Privacy Policy</p>
+              <p>Cookie Policy</p>
+            </div>
           </div>
         </div>
       </div>
