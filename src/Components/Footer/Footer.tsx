@@ -11,7 +11,7 @@ function Footer() {
             </div>
             <div className="footer-box__top--1col">
               <ul>
-                <li>Trainings</li>
+                <li className="footer-box__top--1col--title">Trainings</li>
                 <li>
                   <a href="url">Free trial training</a>
                 </li>
@@ -25,7 +25,7 @@ function Footer() {
             </div>
             <div className="footer-box__top--1col">
               <ul>
-                <li>Additional info</li>
+              <li className="footer-box__top--1col--title">Additional info</li>
                 <li>
                   <a href="url">All Clubs</a>
                 </li>
@@ -39,7 +39,7 @@ function Footer() {
             </div>
             <div className="footer-box__top--1col">
               <ul>
-                <li>Company</li>
+              <li className="footer-box__top--1col--title">Company</li>
                 <li>
                   <a href="url">Contacts</a>
                 </li>
@@ -50,7 +50,7 @@ function Footer() {
             </div>
             <div className="footer-box__top--1col">
               <ul>
-                <li>Connect</li>
+              <li className="footer-box__top--1col--title">Connect</li>
                 <li>
                   <a href="url">Instagram</a>
                 </li>
@@ -66,9 +66,9 @@ function Footer() {
           <div className="footer-box__bottom">
             <div className="footer-box__bottom--1row">
               <p>© Iron Gym. 2023</p>
-              <p>Terms of Services</p>
-              <p>Privacy Policy</p>
-              <p>Cookie Policy</p>
+              <a href="url">Terms of Services</a>
+              <a href="url">Privacy Policy</a>
+              <a href="url">Cookie Policy</a>
             </div>
           </div>
         </div>

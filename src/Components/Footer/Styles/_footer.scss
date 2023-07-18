@@ -1,6 +1,7 @@
 .footer {
-  padding-top: 2rem;
+  padding: 1.5rem 0;
   position: relative;
+  background: radial-gradient(circle at top right, #242424, #303030);
 }
 
 .footer-box {
@@ -13,7 +14,6 @@
   &__top {
     width: 100%;
     display: flex;
-    background-color: aqua;
     justify-content: space-evenly;
     gap: 5rem;
 
@@ -29,18 +29,48 @@
 
       ul {
         list-style-type: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
         li {
           a {
+            color: rgb(119, 119, 119);
+            text-decoration: none;
+            transition: 0.2s ease-in;
+          }
+          a:hover {
+            color: rgb(170, 170, 170);
             text-decoration: none;
           }
         }
       }
+      &--title {
+        font-size: 1.1rem;
+        margin: 1rem 0;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
     }
   }
   &__bottom {
+    border-top: 1px solid rgb(223, 223, 223);
+    padding: 1rem 0;
+    width: 100%;
     &--1row {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+
+      a {
+        color: rgb(119, 119, 119);
+        text-decoration: none;
+        transition: 0.2s ease-in;
+      }
+      a:hover {
+        color: rgb(170, 170, 170);
+        text-decoration: none;
+      }
     }
   }
 }
