@@ -1,3 +1,6 @@
+import google from "../../Images/Footer/googleplay.png";
+import apple from "../../Images/Footer/appstore.png";
+
 function Footer() {
   return (
     <section className="footer">
@@ -5,9 +8,12 @@ function Footer() {
         <div className="footer-box">
           <div className="footer-box__top">
             <div className="footer-box__top--1row">
-              <p>logo0</p>
-              <p>logo1</p>
-              <p>logo2</p>
+              <div className="footer-box__top--1row--img">
+                <img src={google} alt="google" />
+              </div>
+              <div className="footer-box__top--1row--img">
+                <img src={apple} alt="apple" />
+              </div>
             </div>
             <div className="footer-box__top--1col">
               <ul>
@@ -25,7 +31,9 @@ function Footer() {
             </div>
             <div className="footer-box__top--1col">
               <ul>
-              <li className="footer-box__top--1col--title">Additional info</li>
+                <li className="footer-box__top--1col--title">
+                  Additional info
+                </li>
                 <li>
                   <a href="url">All Clubs</a>
                 </li>
@@ -39,7 +47,7 @@ function Footer() {
             </div>
             <div className="footer-box__top--1col">
               <ul>
-              <li className="footer-box__top--1col--title">Company</li>
+                <li className="footer-box__top--1col--title">Company</li>
                 <li>
                   <a href="url">Contacts</a>
                 </li>
@@ -50,7 +58,7 @@ function Footer() {
             </div>
             <div className="footer-box__top--1col">
               <ul>
-              <li className="footer-box__top--1col--title">Connect</li>
+                <li className="footer-box__top--1col--title">Connect</li>
                 <li>
                   <a href="url">Instagram</a>
                 </li>
