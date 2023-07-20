@@ -6,15 +6,15 @@ function Footer() {
     <section className="footer">
       <div className="container">
         <div className="footer-box">
-          <div className="footer-box__top">
-            <div className="footer-box__top--1row">
-              <div className="footer-box__top--1row--img">
-                <img src={google} alt="google" />
-              </div>
-              <div className="footer-box__top--1row--img">
-                <img src={apple} alt="apple" />
-              </div>
+          <div className="footer-box__logos">
+            <div className="footer-box__logos--img">
+              <img src={google} alt="google" />
             </div>
+            <div className="footer-box__logos--img">
+              <img src={apple} alt="apple" />
+            </div>
+          </div>
+          <div className="footer-box__top">
             <div className="footer-box__top--1col">
               <ul>
                 <li className="footer-box__top--1col--title">Trainings</li>
