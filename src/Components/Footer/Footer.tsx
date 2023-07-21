@@ -8,10 +8,14 @@ function Footer() {
         <div className="footer-box">
           <div className="footer-box__logos">
             <div className="footer-box__logos--img">
-              <img src={google} alt="google" />
+              <a href="url">
+                <img src={google} alt="google" />
+              </a>
             </div>
             <div className="footer-box__logos--img">
-              <img src={apple} alt="apple" />
+              <a href="url">
+                <img src={apple} alt="apple" />
+              </a>
             </div>
           </div>
           <div className="footer-box__top">
