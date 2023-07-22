@@ -1,25 +1,30 @@
+import Logo from "../../Images/Logo/logo.png";
+
 function Navbar() {
   return (
-    <nav className="navbar-box">
-      <div className="navbar-box__logo">
+    <nav className="navbar">
+      <div className="navbar__logo">
         <a href="#">
-          <img src="logo" alt="logo" />
+          <img src={Logo} alt="logo" />
         </a>
       </div>
-      <div className="navbar-box__links">
-        <a href="button">
-          <p>button1</p>
-        </a>
-        <a href="button">
-          <p>button1</p>
-        </a>
-        <a href="button">
-          <p>button1</p>
-        </a>
-        <a href="button">
-          <p>button1</p>
-        </a>
-      </div>
+      <ul className="navbar__links">
+        <li>
+          <a href="button">
+            <p>PRICES</p>
+          </a>
+        </li>
+        <li>
+          <a href="button">
+            <p>TRAININGS</p>
+          </a>
+        </li>
+        <li>
+          <a href="button">
+            <p>ABOUT US</p>
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 }
