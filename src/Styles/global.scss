@@ -4,7 +4,12 @@
 //Components
 @import "../Components/Hero/Styles/hero";
 @import "../Components/WhyUs/Styles/why-us";
-@import "../Components/Subscription/Styles/subscribtion";
+@import "../Components/Subscription/Styles/subscription";
+@import "../Components/GroupTrainings/Styles/group-trainings";
+@import "../Components/Locations/Styles/locations";
+@import "../Components/Carousel/Styles/carousel";
+@import "../Components/Maps/Styles/maps";
+@import "../Components/Footer/Styles/footer";
 
 //Global
 body {
@@ -38,9 +43,10 @@ h1 {
 p {
   font-size: 1rem;
   font-family: $text-font;
+  color: #a8a8a8;
 }
 .background {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 5px 20px;
 }

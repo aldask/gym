@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(98deg, #cad4e0 5%, #3c4857 60%, #23242493 90%);
+  background: linear-gradient(135deg, #ff4e50 0%, #fc913a 100%);
   display: flex;
   align-items: center;
   padding: 5rem 0;
@@ -25,6 +25,7 @@
         font-size: 3.75rem;
         margin-bottom: 1.5rem;
         inline-size: 100%;
+        color: white;
 
         @media screen and (max-width: 560px) {
           font-size: 2.2rem;
@@ -34,6 +35,7 @@
       &--text {
         font-size: 1.2rem;
         margin-bottom: 1.5rem;
+        color: #d9d9d9;
       }
 
       &--loadbar {
@@ -57,7 +59,7 @@
             border-radius: 50%;
             width: 60%;
             height: 60%;
-            background-color: #cad4e0;
+            background: linear-gradient(135deg, #ff4e50 0%, #fc913a 100%);
             box-shadow: inset 0px 0px 2px -1px rgba(0, 0, 0, 0.34);
           }
         }

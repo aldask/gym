@@ -4,7 +4,7 @@ import { heroContent } from "../../Data/heroData";
 function Hero() {
   const initialContent = heroContent[0];
 
-  const [circleCounter, setCircleCounter] = useState(3.6);
+  const [circleCounter, setCircleCounter] = useState(0);
   const [contentId, setContentId] = useState(initialContent.id);
   const [contentTitle, setContentTitle] = useState(initialContent.title);
   const [contentText, setContentText] = useState(initialContent.text);
