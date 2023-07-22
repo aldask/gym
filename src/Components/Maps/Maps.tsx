@@ -2,16 +2,21 @@ import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { slides } from "../../Data/locationsData";
 import { Icon } from "leaflet";
+import Pin from "../../Images/Maps/pin.png";
 
 function Maps() {
   const customIcon = new Icon({
-    iconUrl:
-      "https://static.vecteezy.com/system/resources/previews/009/589/758/original/location-location-pin-location-icon-transparent-free-png.png",
-    iconSize: [50, 50],
+    iconUrl: Pin,
+    iconSize: [40, 40],
   });
+
+  const createMarkup = (htmlString: string) => {
+    return { __html: htmlString };
+  };
+
   return (
     <section className="maps">
-      <MapContainer center={[54.687157, 25.279652]} zoom={13}>
+      <MapContainer center={[54.687157, 25.279652]} zoom={12}>
         <TileLayer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" />
         {slides.map((marker) => (
           <Marker
@@ -19,7 +24,9 @@ function Maps() {
             key={marker.gymName}
             icon={customIcon}
           >
-            <Popup>{marker.popUp}</Popup>
+            <Popup>
+              <div dangerouslySetInnerHTML={createMarkup(marker.popUp)} />
+            </Popup>
           </Marker>
         ))}
       </MapContainer>
