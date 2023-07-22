@@ -1,3 +1,4 @@
+import Navbar from "../Components/Navbar/Navbar";
 import GroupTrainings from "../Components/GroupTrainings/GroupTrainings";
 import Hero from "../Components/Hero/Hero";
 import Locations from "../Components/Locations/Locations";
@@ -9,6 +10,7 @@ import Footer from "../Components/Footer/Footer";
 function HomePage() {
   return (
     <>
+      <Navbar />
       <Hero />
       <WhyUs />
       <Subscription />

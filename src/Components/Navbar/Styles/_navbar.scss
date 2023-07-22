@@ -1,0 +1,35 @@
+.navbar-box {
+  background: linear-gradient(135deg, #ff7375 0%, #fda55d 100%);
+  z-index: 999999999999;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+
+  &__logo {
+    background-color: rgb(4, 85, 58);
+
+    img {
+      height: 40px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background-color: black;
+    padding: 0 1rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
