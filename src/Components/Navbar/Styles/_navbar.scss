@@ -1,6 +1,6 @@
 .navbar {
   background: linear-gradient(135deg, #ff7375 0%, #fda55d 100%);
-  z-index: 999999999999;
+  z-index: 999;
   top: 0;
   right: 0;
   left: 0;
@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding: 1rem 5rem;
 
   @media screen and (max-width: 575px) {
     position: fixed;
@@ -19,13 +19,13 @@
     right: 0;
     flex-direction: row;
     align-items: center;
-    background: aliceblue;
-    border-top: 2px solid rgba(124, 124, 124, 0.452);
+    border-top: 1px solid rgba(124, 124, 124, 0.452);
+    padding: 1rem;
   }
 
   &__logo {
-    width: 80px;
-    height: 55px;
+    width: 75px;
+    height: 50px;
 
     @media screen and (max-width: 575px) {
       width: 60px;
@@ -40,36 +40,107 @@
 
   &__links {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 2rem;
-    padding: 0 1rem;
-    list-style-type: none;
 
-    @media screen and (max-width: 575px) {
-      gap: 1rem;
-      padding: 0 0.5rem;
-    }
-
-    a {
+    &--text {
       text-decoration: none;
+      color: black;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: 0.2s ease-in-out;
 
-      p {
-        color: black;
-        font-size: 1.2rem;
-        font-weight: 600;
-        transition: 0.2s ease-in-out;
-
-        @media screen and (max-width: 575px) {
-          font-size: 0.9rem;
-        }
-
-        &:hover {
-          font-size: 1.3rem;
-          color: rgb(196, 63, 63);
-          border-bottom: 1px solid rgb(0, 0, 0);
-        }
+      &:hover {
+        color: rgb(196, 63, 63);
+        border-bottom: 1px solid rgb(0, 0, 0);
       }
     }
+
+    &__desktop {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      align-items: center;
+      gap: 2rem;
+      padding: 0 1rem;
+
+      li a {
+        text-decoration: none;
+      }
+
+      @media screen and (max-width: 990px) {
+        display: none;
+      }
+      @media screen and (max-width: 575px) {
+        display: flex;
+        padding: 0 0.5rem;
+        gap: 1rem;
+      }
+    }
+
+    &__mobile {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      z-index: 9999;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+
+      li a {
+        text-decoration: none;
+        font-size: 2rem;
+      }
+
+      &.active {
+        transform: translateX(0);
+      }
+    }
+
+    &__hamburger {
+      display: none;
+
+      @media screen and (max-width: 990px) {
+        display: flex;
+        cursor: pointer;
+        font-size: 1.3rem;
+      }
+
+      @media screen and (max-width: 575px) {
+        display: none;
+      }
+    }
+  }
+}
+
+// Grey out section
+.navbar__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+body.menu-active {
+  overflow: hidden;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
