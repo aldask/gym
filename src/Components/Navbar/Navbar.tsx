@@ -9,7 +9,6 @@ function Navbar() {
   function handleMobileNav() {
     setMobileNav(!mobileNav);
     document.body.classList.toggle("menu-active");
-    console.log(mobileNav);
   }
 
   return (
