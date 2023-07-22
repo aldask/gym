@@ -2,6 +2,7 @@
 @import "./fonts";
 
 //Components
+@import "../Components/Navbar/Styles/navbar";
 @import "../Components/Hero/Styles/hero";
 @import "../Components/WhyUs/Styles/why-us";
 @import "../Components/Subscription/Styles/subscription";
@@ -22,7 +23,7 @@ body {
   margin: 0 auto;
   padding: 0 12.5rem;
 
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 1285px) {
     padding: 0 1.5rem;
   }
 }
@@ -30,7 +31,7 @@ body {
   margin: 0 auto;
   padding: 0 12.5rem;
 
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 1285px) {
     padding: 0;
   }
 }
