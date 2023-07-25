@@ -1,4 +1,4 @@
-import { slides, SlideContent } from "../../Data/locationsData"; // Assuming you have SlideContent type defined in the locationsData file
+import { slides, SlideContent } from "../../Data/locationsData";
 import { useState } from "react";
 
 function Comparison() {
@@ -12,6 +12,18 @@ function Comparison() {
 
     if (selectedGym) {
       setSelectedGymAddress(selectedGym);
+    }
+  };
+  const planTitle = (index: number): string => {
+    switch (index) {
+      case 0:
+        return "Min";
+      case 1:
+        return "Mid";
+      case 2:
+        return "Max";
+      default:
+        return "Min";
     }
   };
 
@@ -32,7 +44,25 @@ function Comparison() {
               </select>
             </div>
             <div className="comparison-box__top--display">
-              <label>{selectedGymAddress.gymStreet}</label>
+              <div className="comparison-box__top--display--plan">
+                <h2>{selectedGymAddress.gymName}</h2>
+                <p>{selectedGymAddress.gymStreet}</p>
+                <div>
+                  {selectedGymAddress.plans.map((plan, index) => (
+                    <div key={index}>
+                      <h3>{planTitle(index)}</h3>
+                      <p>Price: {plan.Price}€/month</p>
+                      <ul>
+                        {plan.features.map((feature, featureIndex) => (
+                          <li key={featureIndex}>
+                            {feature.name} - {feature.benefits ? "+" : "-"}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
