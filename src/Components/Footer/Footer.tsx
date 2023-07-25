@@ -56,7 +56,7 @@ function Footer() {
                   <a href="url">Contacts</a>
                 </li>
                 <li>
-                  <a href="url">Carrer</a>
+                  <a href="url">Career</a>
                 </li>
               </ul>
             </div>
