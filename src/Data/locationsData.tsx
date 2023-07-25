@@ -5,7 +5,7 @@ import Europa from "../Images/Locations/Europa.jpg";
 import Banginis from "../Images/Locations/Banginis.jpg";
 import Antakalnis from "../Images/Locations/Antakalnis.jpg";
 
-interface SlideContent {
+export interface SlideContent {
   locationPic: string;
   gymName: string;
   gymStreet: string;

@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <Link to="/" className="navbar__links--text">
+        <Link to="/">
           <img src={Logo} alt="logo" />
         </Link>
       </div>
