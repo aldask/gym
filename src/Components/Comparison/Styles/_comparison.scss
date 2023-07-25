@@ -1,60 +1,101 @@
 .comparison {
-  padding: 7rem 0 5rem 0;
-}
+  padding: 7rem 0 0 0;
+  background: linear-gradient(135deg, #ff4e50 0%, #fc913a 100%);
 
-.comparison-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  .comparison-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
-  &__top {
-    h2 {
-      font-size: 3rem;
-    }
+    &__top {
+      h2 {
+        font-size: 4.5rem;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0 0 5rem 0;
+        color: white;
+      }
 
-    &--selection {
-      font-size: 1rem;
-      font-weight: 600;
-    }
-
-    &--display {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      background-color: aqua;
-
-      &--plans {
+      &--selection {
+        font-size: 1rem;
+        font-weight: 600;
         display: flex;
-        flex-direction: row;
-        gap: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem;
+        color: white;
 
-        &--plan {
-          flex: 1;
+        select {
+          padding: 0.5rem 0 0.5rem 1rem;
+          font-size: 1rem;
+          text-transform: uppercase;
+          border: 1px solid rgba(201, 201, 201, 0.452);
+        }
+      }
+
+      &--display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        padding-bottom: 5rem;
+        margin-top: 1rem;
+        background: white;
+
+        h2 {
+          font-size: 3rem;
+          color: rgb(0, 0, 0);
+          padding: 2rem 0 0 0;
+        }
+        p {
+          padding: 0 0 3rem 0;
+          font-size: 1.25rem;
+        }
+
+        &--plans {
           display: flex;
-          flex-direction: column;
-          background-color: rgb(5, 70, 70);
+          flex-direction: row;
+          gap: 3rem;
 
-          h3 {
-            font-size: 1.5rem;
-            color: white;
-          }
-
-          p {
-            color: white;
-          }
-
-          ul {
-            list-style: none;
-            padding: 0;
+          &--plan {
+            flex: 1;
             display: flex;
             flex-direction: column;
-          }
+            background-color: rgba(206, 206, 206, 0.212);
+            border-radius: 5px;
+            border: 1px solid rgba(161, 161, 161, 0.644);
+            padding: 1rem;
 
-          li {
-            margin-right: 1rem;
+            h3 {
+              font-size: 3rem;
+              color: rgb(54, 54, 54);
+              padding-bottom: 0.2rem;
+            }
+
+            p {
+              color: rgb(54, 54, 54);
+              font-size: 3.3rem;
+              display: flex;
+              flex-direction: row;
+
+              span {
+                font-size: 1.5rem;
+              }
+            }
+
+            ul {
+              list-style: none;
+              padding: 2rem 0;
+              display: flex;
+              flex-direction: column;
+              gap: 0.3rem;
+            }
           }
         }
       }

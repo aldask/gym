@@ -33,9 +33,12 @@ function Comparison() {
       <div className="container">
         <div className="comparison-box">
           <div className="comparison-box__top">
-            <h2>Choose one of our gyms below!</h2>
+            <h2>
+              Choose your <br />
+              membership
+            </h2>
             <div className="comparison-box__top--selection">
-              <label>Select your gym: {" "}</label>
+              <label>Select the club below to see the options</label>
               <select name="gyms" onChange={handleSelectedGym}>
                 {slides.map((gym) => (
                   <option key={gym.gymName} value={gym.gymName}>
@@ -49,13 +52,18 @@ function Comparison() {
               <p>{selectedGymAddress.gymStreet}</p>
               <div className="comparison-box__top--display--plans">
                 {selectedGymAddress.plans.map((plan, index) => (
-                  <div key={index} className="comparison-box__top--display--plans--plan">
+                  <div
+                    key={index}
+                    className="comparison-box__top--display--plans--plan"
+                  >
                     <h3>{planTitle(index)}</h3>
-                    <p>Price: {plan.Price}€/month</p>
+                    <p>
+                      {plan.Price}€<span>/month</span>
+                    </p>
                     <ul>
                       {plan.features.map((feature, featureIndex) => (
                         <li key={featureIndex}>
-                          {feature.name} - {feature.benefits ? "+" : "-"}
+                          {feature.name} - {feature.benefits ? "yes" : "nope"}
                         </li>
                       ))}
                     </ul>
