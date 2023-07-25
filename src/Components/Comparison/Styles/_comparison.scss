@@ -1,3 +1,63 @@
 .comparison {
   padding: 7rem 0 5rem 0;
 }
+
+.comparison-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &__top {
+    h2 {
+      font-size: 3rem;
+    }
+
+    &--selection {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    &--display {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background-color: aqua;
+
+      &--plans {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+
+        &--plan {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          background-color: rgb(5, 70, 70);
+
+          h3 {
+            font-size: 1.5rem;
+            color: white;
+          }
+
+          p {
+            color: white;
+          }
+
+          ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+          }
+
+          li {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
