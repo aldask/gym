@@ -8,13 +8,13 @@ function Footer() {
         <div className="footer-box">
           <div className="footer-box__logos">
             <div className="footer-box__logos--img">
-              <a href="url">
-                <img src={google} alt="google" />
+              <a href="https://google.com/">
+                <img src={google} alt="google-store" />
               </a>
             </div>
             <div className="footer-box__logos--img">
-              <a href="url">
-                <img src={apple} alt="apple" />
+              <a href="https://apple.com/">
+                <img src={apple} alt="apple-store" />
               </a>
             </div>
           </div>
@@ -56,7 +56,7 @@ function Footer() {
                   <a href="url">Contacts</a>
                 </li>
                 <li>
-                  <a href="url">Carrer</a>
+                  <a href="url">Career</a>
                 </li>
               </ul>
             </div>

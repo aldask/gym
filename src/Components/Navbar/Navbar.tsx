@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from "../../Images/Logo/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
@@ -14,26 +15,26 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <a href="#">
+        <Link to="/">
           <img src={Logo} alt="logo" />
-        </a>
+        </Link>
       </div>
       <div className="navbar__links">
         <ul className="navbar__links__desktop">
           <li>
-            <a href="button">
-              <p className="navbar__links--text">PRICES</p>
-            </a>
+            <Link to="/prices" className="navbar__links--text">
+              PRICES
+            </Link>
           </li>
           <li>
-            <a href="button">
-              <p className="navbar__links--text">TRAININGS</p>
-            </a>
+            <Link to="/" className="navbar__links--text">
+              TRAININGS
+            </Link>
           </li>
           <li>
-            <a href="button">
-              <p className="navbar__links--text">ABOUT US</p>
-            </a>
+            <Link to="/" className="navbar__links--text">
+              ABOUT US
+            </Link>
           </li>
         </ul>
         <div className="navbar__links__hamburger" onClick={handleMobileNav}>
@@ -41,19 +42,19 @@ function Navbar() {
         </div>
         <ul className={`navbar__links__mobile ${mobileNav ? "active" : ""}`}>
           <li>
-            <a href="button">
-              <p className="navbar__links--text">PRICES</p>
-            </a>
+            <Link to="/prices" className="navbar__links--text">
+              PRICES
+            </Link>
           </li>
           <li>
-            <a href="button">
-              <p className="navbar__links--text">TRAININGS</p>
-            </a>
+            <Link to="/" className="navbar__links--text">
+              TRAININGS
+            </Link>
           </li>
           <li>
-            <a href="button">
-              <p className="navbar__links--text">ABOUT US</p>
-            </a>
+            <Link to="/" className="navbar__links--text">
+              ABOUT US
+            </Link>
           </li>
         </ul>
       </div>

@@ -1,6 +1,6 @@
 import Navbar from "../Components/Navbar/Navbar";
-import GroupTrainings from "../Components/GroupTrainings/GroupTrainings";
 import Hero from "../Components/Hero/Hero";
+import GroupTrainings from "../Components/GroupTrainings/GroupTrainings";
 import Locations from "../Components/Locations/Locations";
 import Subscription from "../Components/Subscription/Subscription";
 import WhyUs from "../Components/WhyUs/WhyUs";
