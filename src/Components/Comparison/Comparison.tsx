@@ -60,18 +60,19 @@ function Comparison() {
                   >
                     <h3>{planTitle(index)}</h3>
                     <p>
-                      {plan.Price}€<span>/month</span>
+                      €{plan.Price}
+                      <span>/month</span>
                     </p>
                     <ul>
                       {plan.features.map((feature, featureIndex) => (
                         <li key={featureIndex}>
                           {feature.benefits ? (
                             <span>
-                              <img src={True} />
+                              <img src={True} alt="yes" />
                             </span>
                           ) : (
                             <span>
-                              <img src={False} />
+                              <img src={False} alt="no" />
                             </span>
                           )}{" "}
                           {feature.name}
