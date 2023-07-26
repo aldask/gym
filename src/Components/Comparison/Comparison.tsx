@@ -63,7 +63,16 @@ function Comparison() {
                     <ul>
                       {plan.features.map((feature, featureIndex) => (
                         <li key={featureIndex}>
-                          {feature.name} - {feature.benefits ? "yes" : "nope"}
+                          {feature.name} -{" "}
+                          {feature.benefits ? (
+                            <span>
+                              <img src="" />
+                            </span>
+                          ) : (
+                            <span>
+                              <img src="" />a
+                            </span>
+                          )}
                         </li>
                       ))}
                     </ul>
