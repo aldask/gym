@@ -27,7 +27,7 @@ function Slide({ item, width }: SlideProps) {
           <p>{gymPerks}</p>
         </div>
         <div className="slide__content--about">
-          <button>Visit Club Page</button>
+          <button>View club prices</button>
         </div>
       </div>
     </div>

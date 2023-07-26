@@ -83,10 +83,16 @@
     padding: 1rem 0;
     width: 100%;
 
+    @media screen and (max-width: 575px) {
+      padding-bottom: 5rem;
+    }
+
     &--1row {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      gap: 0.5rem;
+      flex-wrap: wrap;
 
       a {
         color: rgb(119, 119, 119);
