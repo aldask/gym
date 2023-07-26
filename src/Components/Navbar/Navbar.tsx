@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../../Images/Logo/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -9,30 +9,55 @@ function Navbar() {
 
   function handleMobileNav() {
     setMobileNav(!mobileNav);
-    document.body.classList.toggle("menu-active");
+  }
+
+  useEffect(() => {
+    if (mobileNav) {
+      document.body.classList.add("menu-active");
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.classList.remove("menu-active");
+      document.body.style.overflow = "visible";
+    }
+  }, [mobileNav]);
+
+  function handleLinkClick() {
+    window.scrollTo(0, 0);
   }
 
   return (
     <nav className="navbar">
       <div className="navbar__logo">
         <Link to="/">
-          <img src={Logo} alt="logo" />
+          <img src={Logo} alt="logo" onClick={handleLinkClick} />
         </Link>
       </div>
       <div className="navbar__links">
         <ul className="navbar__links__desktop">
           <li>
-            <Link to="/prices" className="navbar__links--text">
+            <Link
+              to="/prices"
+              className="navbar__links--text"
+              onClick={handleLinkClick}
+            >
               PRICES
             </Link>
           </li>
           <li>
-            <Link to="/" className="navbar__links--text">
+            <Link
+              to="/"
+              className="navbar__links--text"
+              onClick={handleLinkClick}
+            >
               TRAININGS
             </Link>
           </li>
           <li>
-            <Link to="/" className="navbar__links--text">
+            <Link
+              to="/"
+              className="navbar__links--text"
+              onClick={handleLinkClick}
+            >
               ABOUT US
             </Link>
           </li>
@@ -42,17 +67,29 @@ function Navbar() {
         </div>
         <ul className={`navbar__links__mobile ${mobileNav ? "active" : ""}`}>
           <li>
-            <Link to="/prices" className="navbar__links--text">
+            <Link
+              to="/prices"
+              className="navbar__links--text"
+              onClick={handleLinkClick}
+            >
               PRICES
             </Link>
           </li>
           <li>
-            <Link to="/" className="navbar__links--text">
+            <Link
+              to="/"
+              className="navbar__links--text"
+              onClick={handleLinkClick}
+            >
               TRAININGS
             </Link>
           </li>
           <li>
-            <Link to="/" className="navbar__links--text">
+            <Link
+              to="/"
+              className="navbar__links--text"
+              onClick={handleLinkClick}
+            >
               ABOUT US
             </Link>
           </li>
