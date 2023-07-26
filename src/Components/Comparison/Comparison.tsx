@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { slides, SlideContent } from "../../Data/locationsData";
+import True from "../../Images/Misc/Ok.png";
+import False from "../../Images/Misc/No.png";
 
 function Comparison() {
   const [selectedGymAddress, setSelectedGymAddress] = useState<SlideContent>(
@@ -58,21 +60,22 @@ function Comparison() {
                   >
                     <h3>{planTitle(index)}</h3>
                     <p>
-                      {plan.Price}€<span>/month</span>
+                      €{plan.Price}
+                      <span>/month</span>
                     </p>
                     <ul>
                       {plan.features.map((feature, featureIndex) => (
                         <li key={featureIndex}>
-                          {feature.name} -{" "}
                           {feature.benefits ? (
                             <span>
-                              <img src="" />
+                              <img src={True} alt="yes" />
                             </span>
                           ) : (
                             <span>
-                              <img src="" />a
+                              <img src={False} alt="no" />
                             </span>
-                          )}
+                          )}{" "}
+                          {feature.name}
                         </li>
                       ))}
                     </ul>
