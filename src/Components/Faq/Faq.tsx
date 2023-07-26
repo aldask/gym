@@ -5,15 +5,10 @@ function Faq() {
   const [selectedQuestion, setSelectedQuestion] = useState("");
 
   const handleQuestion = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const selectedQuestion = faqContent.find(
-      (question) => question.ask === e.currentTarget.value
+    const clickedQuestion = e.currentTarget.value;
+    setSelectedQuestion((prevSelectedQuestion) =>
+      prevSelectedQuestion === clickedQuestion ? "" : clickedQuestion
     );
-
-    if (selectedQuestion) {
-      setSelectedQuestion(selectedQuestion.answer);
-    } else {
-      setSelectedQuestion("");
-    }
   };
 
   return (
@@ -26,9 +21,11 @@ function Faq() {
                 <button
                   className="faq-box__question-box--question"
                   onClick={handleQuestion}
+                  value={question.ask}
                 >
                   {question.ask}
                 </button>
+                {selectedQuestion === question.ask && <p>{question.answer}</p>}
               </div>
             ))}
           </div>

@@ -5,15 +5,17 @@ interface faqContent {
 
 export const faqContent: faqContent[] = [
   {
-    ask: "question 1",
-    answer: "answer 1",
+    ask: "What are opening hours of the club?",
+    answer: "All of our clubs are open 24/7!",
   },
   {
-    ask: "question 2",
-    answer: "answer 2",
+    ask: "What equipment brand is being used in Lemon Gym clubs?",
+    answer:
+      "We work with the best equipment manufacturers in the market – Life Fitness, Hammer, Cybex, Technogym.",
   },
   {
-    ask: "question 3",
-    answer: "answer 3",
+    ask: "Can I rewrite my membership to another person?",
+    answer:
+      "Yes, one membership can be transfered twice in the register, and after paying the transfer fee.",
   },
 ];
