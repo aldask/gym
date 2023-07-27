@@ -56,7 +56,6 @@
 .slide {
   flex-direction: column;
   display: inline-flex;
-  height: 600px;
   width: 480px;
   background-color: #f7f7f7;
   border-radius: 5px;
@@ -69,11 +68,6 @@
   }
   @media screen and (max-width: 355px) {
     width: 280px;
-  }
-
-  @media screen and (max-width: 414px) {
-    width: 100%;
-    height: auto;
   }
 
   &__img {

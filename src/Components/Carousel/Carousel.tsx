@@ -40,7 +40,7 @@ const Carousel = () => {
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
         {slides.map((item, index) => (
-          <Slide key={index} item={item} width="100%" />
+          <Slide key={index} item={item} />
         ))}
       </div>
       <div className="carousel__buttons">
