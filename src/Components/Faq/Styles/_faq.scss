@@ -3,6 +3,37 @@
   padding: 3rem;
 }
 .faq-box {
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    gap: 1rem;
+
+    @media screen and (max-width: 1490px) {
+      flex-direction: column;
+    }
+
+    h2 {
+      flex: 1;
+      margin: 0;
+      font-size: 3rem;
+    }
+    p {
+      flex: 1;
+      margin: 0;
+      font-size: 1.25rem;
+      color: black;
+    }
+    span {
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+      }
+    }
+  }
   &__question-box {
     display: flex;
     flex-direction: column;
@@ -18,15 +49,17 @@
         border: none;
         padding: 20px 50px 20px 20px;
         color: rgb(0, 0, 0);
-        font-size: 1.5rem;
+        font-size: 20px;
         font-weight: 700;
         text-align: left;
         background-color: inherit;
+        border-bottom: 1px solid #ccc;
       }
     }
     &--answer {
       padding: 20px;
-      border-top: 1px solid #ccc;
+      font-size: 16px;
+      color: black;
     }
   }
 }
