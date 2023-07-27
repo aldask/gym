@@ -32,32 +32,32 @@ export const slides: SlideContent[] = [
     popUp: "<h2>Savanoriai</h2><p>Savanorių pr. 168, Kaunas</p>",
     plans: [
       {
-        Price: 21.99,
+        Price: 20.99,
+        features: [
+          { name: "1 month minimal term of membership", benefits: true },
+          { name: "Unlimited visit and 24/7 club", benefits: false },
+          { name: "Access to all Iron Gym clubs", benefits: false },
+          { name: "Sauna", benefits: false },
+          { name: "Group trainings", benefits: false },
+          { name: "Membership freeze", benefits: false },
+          { name: "Rewriting the contract", benefits: false },
+        ],
+      },
+      {
+        Price: 28.99,
         features: [
           { name: "12 months minimal term of membership", benefits: true },
           { name: "Unlimited visit and 24/7 club", benefits: true },
           { name: "Access to all Iron Gym clubs", benefits: true },
           { name: "Sauna", benefits: true },
           { name: "Group trainings", benefits: false },
-          { name: "Free water", benefits: true },
+          { name: "Free water", benefits: false },
           { name: "Membership freeze", benefits: true },
-          { name: "Rewriting the contract", benefits: true },
+          { name: "Rewriting the contract", benefits: false },
         ],
       },
       {
-        Price: 29.99,
-        features: [
-          { name: "1 month minimal term of membership", benefits: true },
-          { name: "Unlimited visit and 24/7 club", benefits: true },
-          { name: "Access to all Iron Gym clubs", benefits: false },
-          { name: "Sauna", benefits: false },
-          { name: "Group trainings", benefits: false },
-          { name: "Membership freeze", benefits: false },
-          { name: "Rewriting the contract", benefits: true },
-        ],
-      },
-      {
-        Price: 39.99,
+        Price: 32.99,
         features: [
           { name: "12 months minimal term of membership", benefits: true },
           { name: "Unlimited visit and 24/7 club", benefits: true },
@@ -82,19 +82,6 @@ export const slides: SlideContent[] = [
       {
         Price: 21.99,
         features: [
-          { name: "12 months minimal term of membership", benefits: true },
-          { name: "Unlimited visit and 24/7 club", benefits: true },
-          { name: "Access to all Iron Gym clubs", benefits: true },
-          { name: "Sauna", benefits: true },
-          { name: "Group trainings", benefits: false },
-          { name: "Free water", benefits: true },
-          { name: "Membership freeze", benefits: true },
-          { name: "Rewriting the contract", benefits: true },
-        ],
-      },
-      {
-        Price: 29.99,
-        features: [
           { name: "1 month minimal term of membership", benefits: true },
           { name: "Unlimited visit and 24/7 club", benefits: true },
           { name: "Access to all Iron Gym clubs", benefits: false },
@@ -105,7 +92,20 @@ export const slides: SlideContent[] = [
         ],
       },
       {
-        Price: 32.99,
+        Price: 26.99,
+        features: [
+          { name: "12 months minimal term of membership", benefits: true },
+          { name: "Unlimited visit and 24/7 club", benefits: true },
+          { name: "Access to all Iron Gym clubs", benefits: true },
+          { name: "Sauna", benefits: true },
+          { name: "Group trainings", benefits: false },
+          { name: "Free water", benefits: false },
+          { name: "Membership freeze", benefits: true },
+          { name: "Rewriting the contract", benefits: true },
+        ],
+      },
+      {
+        Price: 31.99,
         features: [
           { name: "12 months minimal term of membership", benefits: true },
           { name: "Unlimited visit and 24/7 club", benefits: true },
@@ -129,24 +129,11 @@ export const slides: SlideContent[] = [
     popUp: "<h2>Pilaitė</h2><p>Vydūno g. 2, Vilnius</p>",
     plans: [
       {
-        Price: 19.99,
-        features: [
-          { name: "12 months minimal term of membership", benefits: true },
-          { name: "Unlimited visit and 24/7 club", benefits: true },
-          { name: "Access to all Iron Gym clubs", benefits: true },
-          { name: "Sauna", benefits: false },
-          { name: "Group trainings", benefits: false },
-          { name: "Free water", benefits: true },
-          { name: "Membership freeze", benefits: true },
-          { name: "Rewriting the contract", benefits: true },
-        ],
-      },
-      {
-        Price: 29.99,
+        Price: 23.99,
         features: [
           { name: "1 month minimal term of membership", benefits: true },
           { name: "Unlimited visit and 24/7 club", benefits: true },
-          { name: "Access to all Iron Gym clubs", benefits: false },
+          { name: "Access to all Iron Gym clubs", benefits: true },
           { name: "Sauna", benefits: false },
           { name: "Group trainings", benefits: false },
           { name: "Membership freeze", benefits: false },
@@ -154,7 +141,20 @@ export const slides: SlideContent[] = [
         ],
       },
       {
-        Price: 32.99,
+        Price: 30.99,
+        features: [
+          { name: "12 months minimal term of membership", benefits: true },
+          { name: "Unlimited visit and 24/7 club", benefits: true },
+          { name: "Access to all Iron Gym clubs", benefits: true },
+          { name: "Sauna", benefits: true },
+          { name: "Group trainings", benefits: false },
+          { name: "Free water", benefits: false },
+          { name: "Membership freeze", benefits: true },
+          { name: "Rewriting the contract", benefits: true },
+        ],
+      },
+      {
+        Price: 35.99,
         features: [
           { name: "12 months minimal term of membership", benefits: true },
           { name: "Unlimited visit and 24/7 club", benefits: true },
@@ -179,25 +179,25 @@ export const slides: SlideContent[] = [
       {
         Price: 21.99,
         features: [
-          { name: "12 months minimal term of membership", benefits: true },
-          { name: "Unlimited visit and 24/7 club", benefits: true },
-          { name: "Access to all Iron Gym clubs", benefits: true },
-          { name: "Sauna", benefits: true },
-          { name: "Group trainings", benefits: false },
-          { name: "Free water", benefits: true },
-          { name: "Membership freeze", benefits: true },
-          { name: "Rewriting the contract", benefits: true },
-        ],
-      },
-      {
-        Price: 29.99,
-        features: [
           { name: "1 month minimal term of membership", benefits: true },
           { name: "Unlimited visit and 24/7 club", benefits: true },
           { name: "Access to all Iron Gym clubs", benefits: false },
           { name: "Sauna", benefits: false },
           { name: "Group trainings", benefits: false },
           { name: "Membership freeze", benefits: false },
+          { name: "Rewriting the contract", benefits: false },
+        ],
+      },
+      {
+        Price: 29.99,
+        features: [
+          { name: "12 months minimal term of membership", benefits: true },
+          { name: "Unlimited visit and 24/7 club", benefits: true },
+          { name: "Access to all Iron Gym clubs", benefits: true },
+          { name: "Sauna", benefits: true },
+          { name: "Group trainings", benefits: false },
+          { name: "Free water", benefits: false },
+          { name: "Membership freeze", benefits: true },
           { name: "Rewriting the contract", benefits: true },
         ],
       },
@@ -228,25 +228,25 @@ export const slides: SlideContent[] = [
       {
         Price: 21.99,
         features: [
-          { name: "12 months minimal term of membership", benefits: true },
-          { name: "Unlimited visit and 24/7 club", benefits: true },
-          { name: "Access to all Iron Gym clubs", benefits: true },
-          { name: "Sauna", benefits: true },
-          { name: "Group trainings", benefits: false },
-          { name: "Free water", benefits: true },
-          { name: "Membership freeze", benefits: true },
-          { name: "Rewriting the contract", benefits: true },
-        ],
-      },
-      {
-        Price: 29.99,
-        features: [
           { name: "1 month minimal term of membership", benefits: true },
           { name: "Unlimited visit and 24/7 club", benefits: true },
           { name: "Access to all Iron Gym clubs", benefits: false },
           { name: "Sauna", benefits: false },
           { name: "Group trainings", benefits: false },
           { name: "Membership freeze", benefits: false },
+          { name: "Rewriting the contract", benefits: true },
+        ],
+      },
+      {
+        Price: 29.99,
+        features: [
+          { name: "12 months minimal term of membership", benefits: true },
+          { name: "Unlimited visit and 24/7 club", benefits: true },
+          { name: "Access to all Iron Gym clubs", benefits: true },
+          { name: "Sauna", benefits: true },
+          { name: "Group trainings", benefits: false },
+          { name: "Free water", benefits: false },
+          { name: "Membership freeze", benefits: true },
           { name: "Rewriting the contract", benefits: true },
         ],
       },
@@ -275,20 +275,7 @@ export const slides: SlideContent[] = [
     popUp: "<h2>Antakalnis</h2><p>Antakalnio g. 37, Vilnius</p>",
     plans: [
       {
-        Price: 19.99,
-        features: [
-          { name: "12 months minimal term of membership", benefits: true },
-          { name: "Unlimited visit and 24/7 club", benefits: true },
-          { name: "Access to all Iron Gym clubs", benefits: true },
-          { name: "Sauna", benefits: false },
-          { name: "Group trainings", benefits: false },
-          { name: "Free water", benefits: true },
-          { name: "Membership freeze", benefits: true },
-          { name: "Rewriting the contract", benefits: true },
-        ],
-      },
-      {
-        Price: 29.99,
+        Price: 21.99,
         features: [
           { name: "1 month minimal term of membership", benefits: true },
           { name: "Unlimited visit and 24/7 club", benefits: true },
@@ -300,7 +287,20 @@ export const slides: SlideContent[] = [
         ],
       },
       {
-        Price: 32.99,
+        Price: 29.99,
+        features: [
+          { name: "12 months minimal term of membership", benefits: true },
+          { name: "Unlimited visit and 24/7 club", benefits: true },
+          { name: "Access to all Iron Gym clubs", benefits: true },
+          { name: "Sauna", benefits: true },
+          { name: "Group trainings", benefits: false },
+          { name: "Free water", benefits: false },
+          { name: "Membership freeze", benefits: true },
+          { name: "Rewriting the contract", benefits: true },
+        ],
+      },
+      {
+        Price: 33.99,
         features: [
           { name: "12 months minimal term of membership", benefits: true },
           { name: "Unlimited visit and 24/7 club", benefits: true },

@@ -1,5 +1,6 @@
 @import "./reset";
 @import "./fonts";
+@import "./backgrounds";
 
 //Components
 @import "../Components/Navbar/Styles/navbar";
@@ -12,13 +13,14 @@
 @import "../Components/Maps/Styles/maps";
 @import "../Components/Footer/Styles/footer";
 @import "../Components/Comparison/Styles/comparison";
+@import "../Components/Faq/Styles/faq";
 
 //Global
 body {
   display: flex;
   flex-direction: column;
   font-family: $text-font;
-  background-color: #fff;
+  background-color: $bck_white;
 }
 .container {
   margin: 0 auto;
@@ -40,15 +42,15 @@ h1 {
   font-size: 3rem;
   font-weight: 800;
   font-family: $title-font;
-  color: rgb(37, 37, 37);
+  color: $txt_black;
 }
 p {
   font-size: 1rem;
   font-family: $text-font;
-  color: #a8a8a8;
+  color: $txt_grey;
 }
 .background {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: $bck_white;
+  color: $txt_black;
   padding: 5px 20px;
 }

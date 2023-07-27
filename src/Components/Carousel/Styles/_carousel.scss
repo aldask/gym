@@ -38,13 +38,13 @@
     gap: 5px;
 
     .carousel__indicator-button {
-      color: #dfdfdf;
+      color: $txt_white;
       border: none;
       cursor: pointer;
       align-items: center;
 
       &--active {
-        color: #424242;
+        color: $txt_grey;
         font-weight: bold;
       }
     }
@@ -56,9 +56,8 @@
 .slide {
   flex-direction: column;
   display: inline-flex;
-  height: 600px;
   width: 480px;
-  background-color: #f7f7f7;
+  background-color: $bck_white;
   border-radius: 5px;
 
   @media screen and (max-width: 480px) {
@@ -92,7 +91,7 @@
       margin-bottom: 3rem;
 
       p {
-        color: black;
+        color: $txt_black;
         font-size: 1.1rem;
       }
     }
@@ -103,10 +102,10 @@
       flex-wrap: wrap;
 
       p {
-        color: black;
+        color: $txt_black;
         white-space: normal;
         font-weight: 600;
-        background-color: #e6e4e48f;
+        background-color: $bck_grey;
         border-radius: 5px;
         padding: 1rem 0.5rem;
       }
@@ -123,8 +122,8 @@
       transition: all 0.2s ease-in-out;
 
       &:hover {
-        color: black;
-        background-color: rgb(185, 185, 185);
+        color: $txt_black;
+        background-color: $bck_grey-dark;
         border: 1px solid rgba(0, 0, 0, 0);
       }
     }
