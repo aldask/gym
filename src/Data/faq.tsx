@@ -9,7 +9,7 @@ export const faqContent: faqContent[] = [
     answer: "All of our clubs are open 24/7!",
   },
   {
-    ask: "What equipment brand is being used in Lemon Gym clubs?",
+    ask: "What equipment brand is being used in Iron Gym clubs?",
     answer:
       "We work with the best equipment manufacturers in the market – Life Fitness, Hammer, Cybex, Technogym.",
   },

@@ -17,15 +17,18 @@ function Faq() {
         <div className="faq-box">
           <div className="faq-box__question-box">
             {faqContent.map((question) => (
-              <div key={question.ask}>
+              <div key={question.ask} className="faq-box__question-box--question">
                 <button
-                  className="faq-box__question-box--question"
                   onClick={handleQuestion}
                   value={question.ask}
                 >
                   {question.ask}
                 </button>
-                {selectedQuestion === question.ask && <p>{question.answer}</p>}
+                {selectedQuestion === question.ask && (
+                  <p className="faq-box__question-box--answer">
+                    {question.answer}
+                  </p>
+                )}
               </div>
             ))}
           </div>
