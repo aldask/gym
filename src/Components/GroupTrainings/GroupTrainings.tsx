@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import SliderElement from "../SliderElement";
+import SliderElement from "./SliderElement";
 
 //Pics
 import ButtLift from "../../Images/GroupTrainings/Butt-Lift.jpg";

@@ -21,7 +21,7 @@
         text-align: center;
         text-transform: uppercase;
         padding: 0 0 3rem 0;
-        color: white;
+        color: $txt_white;
 
         @media screen and (max-width: 1100px) {
           font-size: 3rem;
@@ -37,13 +37,15 @@
         align-items: center;
         width: 100%;
         gap: 0.5rem;
-        color: white;
+        color: $txt_white;
 
         select {
           padding: 0.5rem 0 0.5rem 1rem;
           font-size: 1rem;
           text-transform: uppercase;
           border: 1px solid rgba(0, 0, 0, 0.447);
+          outline: none;
+          border-radius: 5px;
 
           @media screen and (max-width: 1100px) {
             padding: 0.2rem 0 0.2rem 0.25rem;
@@ -64,7 +66,7 @@
 
         h2 {
           font-size: 3rem;
-          color: rgb(0, 0, 0);
+          color: $txt_black;
           padding: 2rem 0 0 0;
 
           @media screen and (max-width: 1100px) {
@@ -91,9 +93,9 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            background-color: rgba(206, 206, 206, 0.212);
+            background-color: $bck_grey;
             border-radius: 5px;
-            border: 1px solid rgba(161, 161, 161, 0.644);
+            border: 1px solid $bck_grey-dark;
             padding: 1rem;
             width: 340px;
 
@@ -103,7 +105,7 @@
 
             h3 {
               font-size: 2.5rem;
-              color: rgb(54, 54, 54);
+              color: $txt_minBlack;
               text-transform: uppercase;
 
               @media screen and (max-width: 1100px) {
@@ -112,7 +114,7 @@
             }
 
             p {
-              color: rgb(54, 54, 54);
+              color: $txt_minBlack;
               font-size: 3.3rem;
               display: flex;
               flex-direction: row;

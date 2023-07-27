@@ -24,12 +24,12 @@
       flex: 1;
       margin: 0;
       font-size: 1.25rem;
-      color: black;
+      color: $txt_black;
     }
     span {
       a {
         text-decoration: none;
-        color: black;
+        color: $txt_black;
         font-weight: 700;
       }
     }
@@ -48,7 +48,7 @@
         cursor: pointer;
         border: none;
         padding: 20px 50px 20px 20px;
-        color: rgb(0, 0, 0);
+        color: $txt_black;
         font-size: 20px;
         font-weight: 700;
         text-align: left;
@@ -59,7 +59,19 @@
     &--answer {
       padding: 20px;
       font-size: 16px;
-      color: black;
+      color: $txt_black;
+      animation: fadeIn 0.3s ease-in-out;
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

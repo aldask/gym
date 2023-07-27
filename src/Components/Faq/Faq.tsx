@@ -17,7 +17,13 @@ function Faq() {
         <div className="faq-box">
           <div className="faq-box__header">
             <h2>WE’VE GOT ANSWERS</h2>
-            <p>If you can’t find what you’re looking for, please <span><a href = "mailto: hello@irongym.com">contact us</a></span>.</p>
+            <p>
+              If you can’t find what you’re looking for, please{" "}
+              <span>
+                <a href="mailto: hello@irongym.com">contact us</a>
+              </span>
+              .
+            </p>
           </div>
           <div className="faq-box__question-box">
             {faqContent.map((question) => (
@@ -29,7 +35,7 @@ function Faq() {
                   {question.ask}
                 </button>
                 {selectedQuestion === question.ask && (
-                  <p className="faq-box__question-box--answer">
+                  <p className="faq-box__question-box--answer ">
                     {question.answer}
                   </p>
                 )}

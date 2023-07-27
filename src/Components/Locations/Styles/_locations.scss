@@ -32,11 +32,13 @@
 
     &__title {
       font-size: 2.5rem;
+      font-weight: 700;
+      color: $txt_white;
     }
 
     &__text {
       font-size: 1.2rem;
-      color: white;
+      color: $txt_white;
     }
 
     &__buttons {
@@ -52,25 +54,25 @@
       }
 
       &--explore {
-        background: black;
-        color: white;
+        background: $txt_black;
+        color: $txt_white;
         transition: all 0.2s ease-in-out;
         border: none;
 
         &:hover {
-          color: black;
+          color: $txt_black;
           background: white;
         }
       }
       &--join {
         background: rgba(0, 0, 0, 0);
         border: 1px solid #11111169;
-        color: white;
+        color: $txt_white;
         transition: all 0.2s ease-in-out;
 
         &:hover {
-          color: black;
-          background-color: white;
+          color: $txt_black;
+          background-color: $bck_white;
           border: 1px solid #ffffff69;
         }
       }

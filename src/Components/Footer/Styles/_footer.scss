@@ -54,18 +54,18 @@
 
       ul {
         list-style-type: none;
-        color: white;
+        color: $txt_white;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
         li {
           a {
-            color: rgb(119, 119, 119);
+            color: $txt_grey;
             text-decoration: none;
             transition: 0.2s ease-in;
           }
           a:hover {
-            color: rgb(170, 170, 170);
+            color: $txt_grey-hover;
             text-decoration: none;
           }
         }
@@ -95,12 +95,12 @@
       flex-wrap: wrap;
 
       a {
-        color: rgb(119, 119, 119);
+        color: $txt_grey;
         text-decoration: none;
         transition: 0.2s ease-in;
       }
       a:hover {
-        color: rgb(170, 170, 170);
+        color: $txt_grey-hover;
         text-decoration: none;
       }
     }
