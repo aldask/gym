@@ -4,7 +4,7 @@ import Icon3 from "../../Images/Why-Us/icon3.svg";
 import Icon4 from "../../Images/Why-Us/icon4.svg";
 import Icon5 from "../../Images/Why-Us/icon5.svg";
 import Icon6 from "../../Images/Why-Us/icon6.svg";
-import GridElement from "../GridElement";
+import GridElement from "./GridElement";
 
 function WhyUs() {
   return (
