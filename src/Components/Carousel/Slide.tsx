@@ -7,14 +7,13 @@ interface SlideProps {
     gymStreet: string;
     gymPerks: string;
   };
-  width: string;
 }
 
-function Slide({ item, width }: SlideProps) {
+function Slide({ item }: SlideProps) {
   const { locationPic, gymName, gymStreet, gymPerks } = item;
 
   return (
-    <div className="slide" style={{ width }}>
+    <div className="slide">
       <div className="slide__img">
         <img className="slide__img--img" src={locationPic} alt={gymName} />
       </div>
