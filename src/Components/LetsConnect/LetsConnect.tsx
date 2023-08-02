@@ -53,7 +53,19 @@ function LetsConnect() {
                 </div>
               </div>
             </div>
-            <div className="connect-box__bottom--side2">contact form here</div>
+            <div className="connect-box__bottom--side2">
+              <form className="connect-box__bottom--side2--form">
+                <label>Your Name</label>
+                <input placeholder="Name"></input>
+                <label>Your Email</label>
+                <input placeholder="Email"></input>
+                <label>Your Phone Number</label>
+                <input placeholder="Number"></input>
+                <label>Your Message</label>
+                <input placeholder="Message"></input>
+              </form>
+              <button>Contact Us</button>
+            </div>
           </div>
         </div>
       </div>
