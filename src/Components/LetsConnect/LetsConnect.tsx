@@ -4,6 +4,7 @@ import {
   faSquarePhoneFlip,
   faHouse,
 } from "@fortawesome/free-solid-svg-icons";
+import InputForm from "./InputForm";
 
 function LetsConnect() {
   return (
@@ -55,14 +56,13 @@ function LetsConnect() {
             </div>
             <div className="connect-box__bottom--side2">
               <form className="connect-box__bottom--side2--form">
-                <label>Your Name</label>
-                <input placeholder="Name"></input>
-                <label>Your Email</label>
-                <input placeholder="Email"></input>
-                <label>Your Phone Number</label>
-                <input placeholder="Number"></input>
-                <label>Your Message</label>
-                <input placeholder="Message"></input>
+                <InputForm
+                  label="Name"
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Enter Your Name"
+                />
               </form>
               <button>Contact Us</button>
             </div>
