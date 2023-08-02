@@ -134,10 +134,6 @@
   z-index: 9998;
 }
 
-body.menu-active {
-  overflow: hidden;
-}
-
 @keyframes slideIn {
   from {
     transform: translateX(100%);
