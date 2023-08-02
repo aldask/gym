@@ -1,3 +1,10 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSquareEnvelope,
+  faSquarePhoneFlip,
+  faHouse,
+} from "@fortawesome/free-solid-svg-icons";
+
 function LetsConnect() {
   return (
     <section className="connect">
@@ -10,19 +17,25 @@ function LetsConnect() {
           <div className="connect-box__bottom">
             <div className="connect-box__bottom--side1">
               <div className="connect-box__bottom--side1--email">
-                <div>logo</div>
+                <div className="connect-box__bottom--side1--email--logo">
+                  <FontAwesomeIcon icon={faSquareEnvelope} />
+                </div>
                 <div>
                   <a href="mailto:hello@irongym.com">hello@irongym.com</a>
                 </div>
               </div>
               <div className="connect-box__bottom--side1--phone">
-                <div>logo</div>
+                <div className="connect-box__bottom--side1--phone--logo">
+                  <FontAwesomeIcon icon={faSquarePhoneFlip} />
+                </div>
                 <div>
                   <a href="tel:86123">86123</a>
                 </div>
               </div>
               <div className="connect-box__bottom--side1--company">
-                <div>logo</div>
+                <div className="connect-box__bottom--side1--company--logo">
+                  <FontAwesomeIcon icon={faHouse} />
+                </div>
                 <div>
                   <p>stuff about company</p>
                 </div>
