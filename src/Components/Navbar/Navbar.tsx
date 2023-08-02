@@ -13,10 +13,8 @@ function Navbar() {
 
   useEffect(() => {
     if (mobileNav) {
-      document.body.classList.add("menu-active");
       document.body.style.overflow = "hidden";
     } else {
-      document.body.classList.remove("menu-active");
       document.body.style.overflow = "visible";
     }
   }, [mobileNav]);
