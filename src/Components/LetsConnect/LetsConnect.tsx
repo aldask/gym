@@ -62,6 +62,36 @@ function LetsConnect() {
                   name="name"
                   required
                   placeholder="Enter Your Name"
+                  minLength={3}
+                  maxLength={36}
+                />
+                <InputForm
+                  label="Email"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="your@provider.com"
+                  minLength={3}
+                  maxLength={36}
+                />
+                <InputForm
+                  label="Phone Number"
+                  type="tel"
+                  name="telnumber"
+                  required
+                  placeholder="+3706..."
+                  pattern="^\+3706[0-9]{8}$"
+                  minLength={12}
+                  maxLength={12}
+                />
+
+                <InputForm
+                  label="Message"
+                  type="text"
+                  name="message"
+                  required
+                  placeholder="Enter Your Message"
+                  maxLength={256}
                 />
               </form>
               <button>Contact Us</button>

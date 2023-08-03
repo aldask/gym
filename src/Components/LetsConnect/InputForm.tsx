@@ -2,18 +2,22 @@ interface InputFormProp {
   type: string;
   label: string;
   name: string;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   required: boolean;
   placeholder: string;
+  minLength?: number;
+  maxLength?: number;
+  pattern?: string;
 }
 
 const InputForm: React.FC<InputFormProp> = ({
   type,
   label,
   name,
-  onChange,
   required,
   placeholder,
+  minLength,
+  maxLength,
+  pattern,
 }) => {
   return (
     <>
@@ -21,9 +25,11 @@ const InputForm: React.FC<InputFormProp> = ({
       <input
         type={type}
         name={name}
-        onChange={onChange}
         required={required}
         placeholder={placeholder}
+        minLength={minLength}
+        maxLength={maxLength}
+        pattern={pattern}
       ></input>
     </>
   );
