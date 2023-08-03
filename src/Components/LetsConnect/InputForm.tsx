@@ -7,6 +7,7 @@ interface InputFormProp {
   minLength?: number;
   maxLength?: number;
   pattern?: string;
+  className?: string;
 }
 
 const InputForm: React.FC<InputFormProp> = ({
@@ -18,6 +19,7 @@ const InputForm: React.FC<InputFormProp> = ({
   minLength,
   maxLength,
   pattern,
+  className,
 }) => {
   return (
     <>
@@ -30,6 +32,7 @@ const InputForm: React.FC<InputFormProp> = ({
         minLength={minLength}
         maxLength={maxLength}
         pattern={pattern}
+        className={className}
       ></input>
     </>
   );

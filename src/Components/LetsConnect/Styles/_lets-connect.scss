@@ -1,5 +1,9 @@
 .connect {
   padding: 9rem 0;
+
+  @media screen and (max-width: 575px) {
+    padding: 3rem 0;
+  }
 }
 
 .connect-box {
@@ -11,10 +15,18 @@
     h1 {
       font-size: 4.5rem;
       margin-bottom: 1.5rem;
+
+      @media screen and (max-width: 1100px) {
+        font-size: 3rem;
+      }
     }
     p {
       font-size: 1.75rem;
       color: $txt-black;
+
+      @media screen and (max-width: 1100px) {
+        font-size: 1.25rem;
+      }
     }
   }
 
@@ -23,12 +35,23 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 5rem 0 0;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1100px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
 
     &--side1 {
       display: flex;
       flex-direction: column;
       gap: 1rem;
       width: 30%;
+
+      @media screen and (max-width: 1100px) {
+        width: 100%;
+      }
 
       &--email,
       &--phone,
@@ -65,16 +88,48 @@
       width: 50%;
       gap: 1rem;
 
+      @media screen and (max-width: 1100px) {
+        width: 100%;
+      }
+
       &--form {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        font-weight: 700;
+        font-size: 1.2rem;
 
-        input {
-          padding: 1.5rem;
+        label {
+          padding: 0 1.5rem;
+        }
+
+        input,
+        textarea {
+          padding: 1rem 1.5rem;
           font-size: 1rem;
           border: none;
           border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+        }
+
+        textarea::placeholder {
+          font-family: $text-font;
+        }
+      }
+
+      button {
+        padding: 1.5rem 2rem;
+        border: none;
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: $txt_black;
+        color: $txt_white;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: $txt_black;
+          background: rgb(197, 197, 197);
+          cursor: pointer;
         }
       }
     }

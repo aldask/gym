@@ -55,6 +55,7 @@ function LetsConnect() {
               </div>
             </div>
             <div className="connect-box__bottom--side2">
+              <h2>Fill out the form and we will be in touch!</h2>
               <form className="connect-box__bottom--side2--form">
                 <InputForm
                   label="Name"
@@ -84,14 +85,11 @@ function LetsConnect() {
                   minLength={12}
                   maxLength={12}
                 />
-
-                <InputForm
-                  label="Message"
-                  type="text"
-                  name="message"
-                  required
-                  placeholder="Enter Your Message"
+                <label>Message</label>
+                <textarea
                   maxLength={256}
+                  placeholder="Enter Your Message"
+                  required
                 />
               </form>
               <button>Contact Us</button>
