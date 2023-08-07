@@ -5,8 +5,45 @@ import {
   faHouse,
 } from "@fortawesome/free-solid-svg-icons";
 import InputForm from "./InputForm";
+import { useState, useEffect } from "react";
 
 function LetsConnect() {
+  const [inputFilled, setInputFilled] = useState(false);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    telnumber: "",
+    message: "",
+  });
+
+  useEffect(() => {
+    console.log(formData);
+  }, [formData]);
+
+  const handleForm = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = () => {
+    if (
+      formData.name === "" ||
+      formData.email === "" ||
+      formData.telnumber === "" ||
+      formData.message === ""
+    ) {
+      console.log("set error msg");
+    } else {
+      console.log("set hooray msg");
+    }
+  };
+
   return (
     <section className="connect">
       <div className="container">
@@ -56,6 +93,8 @@ function LetsConnect() {
             </div>
             <div className="connect-box__bottom--side2">
               <h2>Fill out the form and we will be in touch!</h2>
+              <p>hooray</p>
+              <p>not hooray</p>
               <form className="connect-box__bottom--side2--form">
                 <InputForm
                   label="Name"
@@ -65,6 +104,7 @@ function LetsConnect() {
                   placeholder="Enter Your Name"
                   minLength={3}
                   maxLength={36}
+                  onChange={handleForm}
                 />
                 <InputForm
                   label="Email"
@@ -74,6 +114,7 @@ function LetsConnect() {
                   placeholder="your@provider.com"
                   minLength={3}
                   maxLength={36}
+                  onChange={handleForm}
                 />
                 <InputForm
                   label="Phone Number"
@@ -84,15 +125,18 @@ function LetsConnect() {
                   pattern="^\+3706[0-9]{8}$"
                   minLength={12}
                   maxLength={12}
+                  onChange={handleForm}
                 />
                 <label>Message</label>
                 <textarea
-                  maxLength={256}
+                  maxLength={255}
                   placeholder="Enter Your Message"
                   required
+                  name="message"
+                  onChange={handleForm}
                 />
               </form>
-              <button>Contact Us</button>
+              <button onClick={handleSubmit}>Contact Us</button>
             </div>
           </div>
         </div>

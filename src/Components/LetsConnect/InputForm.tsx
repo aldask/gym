@@ -8,6 +8,7 @@ interface InputFormProp {
   maxLength?: number;
   pattern?: string;
   className?: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const InputForm: React.FC<InputFormProp> = ({
@@ -20,6 +21,7 @@ const InputForm: React.FC<InputFormProp> = ({
   maxLength,
   pattern,
   className,
+  onChange,
 }) => {
   return (
     <>
@@ -33,6 +35,7 @@ const InputForm: React.FC<InputFormProp> = ({
         maxLength={maxLength}
         pattern={pattern}
         className={className}
+        onChange={onChange}
       ></input>
     </>
   );
