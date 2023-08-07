@@ -135,3 +135,33 @@
     }
   }
 }
+
+.form-message {
+  &--ok {
+    display: none;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: 15px 15px;
+    background-color: #c3fabe;
+    color: #2a6817;
+
+    &.visible {
+      display: flex;
+    }
+  }
+
+  &--not {
+    display: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 22px;
+    background-color: #f8d7da;
+    color: #721c24;
+
+    &.visible {
+      display: flex;
+    }
+  }
+}

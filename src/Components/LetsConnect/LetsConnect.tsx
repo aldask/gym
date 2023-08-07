@@ -8,7 +8,8 @@ import InputForm from "./InputForm";
 import { useState, useEffect } from "react";
 
 function LetsConnect() {
-  const [inputFilled, setInputFilled] = useState(false);
+  const [inputSuccess, setInputSuccess] = useState(false);
+  const [inputFail, setInputFail] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -38,9 +39,11 @@ function LetsConnect() {
       formData.telnumber === "" ||
       formData.message === ""
     ) {
-      console.log("set error msg");
+      setInputFail(true);
+      setInputSuccess(false);
     } else {
-      console.log("set hooray msg");
+      setInputFail(false);
+      setInputSuccess(true);
     }
   };
 
@@ -93,8 +96,14 @@ function LetsConnect() {
             </div>
             <div className="connect-box__bottom--side2">
               <h2>Fill out the form and we will be in touch!</h2>
-              <p>hooray</p>
-              <p>not hooray</p>
+              <p
+                className={`form-message--ok ${inputSuccess ? "visible" : ""}`}
+              >
+                Our support is on the case!
+              </p>
+              <p className={`form-message--not ${inputFail ? "visible" : ""}`}>
+                Some of the inputs are not filled!
+              </p>
               <form className="connect-box__bottom--side2--form">
                 <InputForm
                   label="Name"
