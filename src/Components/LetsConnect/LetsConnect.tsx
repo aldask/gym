@@ -42,7 +42,6 @@ function LetsConnect() {
       setInputFail(true);
       setInputSuccess(false);
     } else {
-      setInputFail(false);
       setInputSuccess(true);
     }
   };
@@ -101,9 +100,6 @@ function LetsConnect() {
               >
                 Our support is on the case!
               </p>
-              <p className={`form-message--not ${inputFail ? "visible" : ""}`}>
-                Some of the inputs are not filled!
-              </p>
               <form className="connect-box__bottom--side2--form">
                 <InputForm
                   label="Name"
@@ -115,6 +111,9 @@ function LetsConnect() {
                   maxLength={36}
                   onChange={handleForm}
                 />
+                {inputFail && formData.name === "" && (
+                  <p className="form-message--not">Please fill out your name</p>
+                )}
                 <InputForm
                   label="Email"
                   type="email"
@@ -125,6 +124,11 @@ function LetsConnect() {
                   maxLength={36}
                   onChange={handleForm}
                 />
+                {inputFail && formData.email === "" && (
+                  <p className="form-message--not">
+                    Please fill out your email
+                  </p>
+                )}
                 <InputForm
                   label="Phone Number"
                   type="tel"
@@ -136,6 +140,11 @@ function LetsConnect() {
                   maxLength={12}
                   onChange={handleForm}
                 />
+                {inputFail && formData.telnumber === "" && (
+                  <p className="form-message--not">
+                    Please fill out your phone number
+                  </p>
+                )}
                 <label>Message</label>
                 <textarea
                   maxLength={255}
@@ -144,6 +153,11 @@ function LetsConnect() {
                   name="message"
                   onChange={handleForm}
                 />
+                {inputFail && formData.message === "" && (
+                  <p className="form-message--not">
+                    Please write your question
+                  </p>
+                )}
               </form>
               <button onClick={handleSubmit}>Contact Us</button>
             </div>
