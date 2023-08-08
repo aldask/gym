@@ -77,7 +77,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" onClick={handleLinkClick}>
+                  <Link to="/career" onClick={handleLinkClick}>
                     Career
                   </Link>
                 </li>
