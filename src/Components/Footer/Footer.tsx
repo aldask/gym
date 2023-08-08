@@ -1,7 +1,14 @@
 import google from "../../Images/Footer/googleplay.png";
 import apple from "../../Images/Footer/appstore.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  function handleLinkClick() {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <section className="footer">
       <div className="container">
@@ -23,13 +30,19 @@ function Footer() {
               <ul>
                 <li className="footer-box__top--1col--title">Trainings</li>
                 <li>
-                  <a href="url">Free trial training</a>
+                  <Link to="/" onClick={handleLinkClick}>
+                    Free trial training
+                  </Link>
                 </li>
                 <li>
-                  <a href="url">All trainings</a>
+                  <Link to="/trainings" onClick={handleLinkClick}>
+                    All trainings
+                  </Link>
                 </li>
                 <li>
-                  <a href="url">All trainers</a>
+                  <Link to="/" onClick={handleLinkClick}>
+                    All trainers
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -39,13 +52,19 @@ function Footer() {
                   Additional info
                 </li>
                 <li>
-                  <a href="url">All Clubs</a>
+                  <Link to="/" onClick={handleLinkClick}>
+                    All Clubs
+                  </Link>
                 </li>
                 <li>
-                  <a href="url">Prices</a>
+                  <Link to="/prices" onClick={handleLinkClick}>
+                    Prices
+                  </Link>
                 </li>
                 <li>
-                  <a href="url">News & Blog</a>
+                  <Link to="/" onClick={handleLinkClick}>
+                    News & Blog
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -53,10 +72,14 @@ function Footer() {
               <ul>
                 <li className="footer-box__top--1col--title">Company</li>
                 <li>
-                  <a href="url">Contacts</a>
+                  <Link to="/about" onClick={handleLinkClick}>
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <a href="url">Career</a>
+                  <Link to="/" onClick={handleLinkClick}>
+                    Career
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -64,23 +87,29 @@ function Footer() {
               <ul>
                 <li className="footer-box__top--1col--title">Connect</li>
                 <li>
-                  <a href="url">Instagram</a>
+                  <a href="https://www.instagram.com/">Instagram</a>
                 </li>
                 <li>
-                  <a href="url">Facebook</a>
+                  <a href="https://www.facebook.com/">Facebook</a>
                 </li>
                 <li>
-                  <a href="url">Email us</a>
+                  <a href="mailto:hello@irongym.com">Email us</a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="footer-box__bottom">
             <div className="footer-box__bottom--1row">
-              <p>© Iron Gym. 2023</p>
-              <a href="url">Terms of Services</a>
-              <a href="url">Privacy Policy</a>
-              <a href="url">Cookie Policy</a>
+              <p>© Iron Gym. {currentYear}</p>
+              <Link to="/" onClick={handleLinkClick}>
+                Terms of Services
+              </Link>
+              <Link to="/" onClick={handleLinkClick}>
+                Privacy Policy
+              </Link>
+              <Link to="/" onClick={handleLinkClick}>
+                Cookie Policy
+              </Link>
             </div>
           </div>
         </div>

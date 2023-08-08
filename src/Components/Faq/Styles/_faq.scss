@@ -1,6 +1,6 @@
 .faq {
   position: relative;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 .faq-box {
   &__header {
@@ -10,9 +10,11 @@
     align-items: center;
     padding-bottom: 1rem;
     gap: 1rem;
+    width: 100%;
 
     @media screen and (max-width: 1490px) {
       flex-direction: column;
+      width: 100%;
     }
 
     h2 {
