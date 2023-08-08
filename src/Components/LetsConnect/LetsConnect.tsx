@@ -95,11 +95,11 @@ function LetsConnect() {
             </div>
             <div className="connect-box__bottom--side2">
               <h2>Fill out the form and we will be in touch!</h2>
-              <p
-                className={`form-message--ok ${inputSuccess ? "visible" : ""}`}
-              >
-                Our support is on the case!
-              </p>
+              {inputSuccess && (
+                <p className={"form-message--ok"}>
+                  Our support is on the case!
+                </p>
+              )}
               <form className="connect-box__bottom--side2--form">
                 <InputForm
                   label="Name"
@@ -112,7 +112,9 @@ function LetsConnect() {
                   onChange={handleForm}
                 />
                 {inputFail && formData.name === "" && (
-                  <p className="form-message--not">Please fill out your name</p>
+                  <p className="form-message--error">
+                    Please fill out your name
+                  </p>
                 )}
                 <InputForm
                   label="Email"
@@ -125,7 +127,7 @@ function LetsConnect() {
                   onChange={handleForm}
                 />
                 {inputFail && formData.email === "" && (
-                  <p className="form-message--not">
+                  <p className="form-message--error">
                     Please fill out your email
                   </p>
                 )}
@@ -141,7 +143,7 @@ function LetsConnect() {
                   onChange={handleForm}
                 />
                 {inputFail && formData.telnumber === "" && (
-                  <p className="form-message--not">
+                  <p className="form-message--error">
                     Please fill out your phone number
                   </p>
                 )}
@@ -154,7 +156,7 @@ function LetsConnect() {
                   onChange={handleForm}
                 />
                 {inputFail && formData.message === "" && (
-                  <p className="form-message--not">
+                  <p className="form-message--error">
                     Please write your question
                   </p>
                 )}

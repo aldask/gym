@@ -109,6 +109,7 @@
           font-size: 1rem;
           border: none;
           border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+          font-family: $text-font;
         }
 
         textarea::placeholder {
@@ -125,6 +126,7 @@
         background: $txt_black;
         color: $txt_white;
         transition: all 0.2s ease-in-out;
+        margin-top: 10px;
 
         &:hover {
           color: $txt_black;
@@ -138,19 +140,15 @@
 
 .form-message {
   &--ok {
-    display: none;
+    display: flex;
     border-radius: 10px;
     font-size: 1.05rem;
     font-weight: 500;
     padding: 15px 15px;
     background-color: #c3fabe;
     color: #2a6817;
-
-    &.visible {
-      display: flex;
-    }
   }
-  &--not {
+  &--error {
     display: flex;
     border-radius: 10px;
     font-size: 1.1rem;
@@ -158,9 +156,5 @@
     padding: 10px 22px;
     background-color: #f8d7da;
     color: #721c24;
-
-    &.visible {
-      display: flex;
-    }
   }
 }
