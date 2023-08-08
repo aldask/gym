@@ -31,11 +31,10 @@
       p {
         font-size: 1.4rem;
         color: $txt-black;
-        width: 70%;
+        width: 100%;
 
         @media screen and (max-width: 1285px) {
           font-size: 1.25rem;
-          width: 100%;
         }
       }
     }
