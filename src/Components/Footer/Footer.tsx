@@ -40,7 +40,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" onClick={handleLinkClick}>
+                  <Link to="/trainers" onClick={handleLinkClick}>
                     All trainers
                   </Link>
                 </li>
