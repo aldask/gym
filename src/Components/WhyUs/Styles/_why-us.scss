@@ -45,13 +45,18 @@
         margin-bottom: 1rem;
         width: 60px;
         height: 60px;
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
       }
       &--title {
         margin-bottom: 1rem;
         text-transform: uppercase;
         font-weight: 800;
         font-size: 1.2rem;
-        color: $txt_white;;
+        color: $txt_white;
       }
       &--text {
         color: $txt_grey;
