@@ -28,6 +28,23 @@
         }
       }
     }
+    &--msgs {
+      display: flex;
+      margin-bottom: 1.5rem;
+
+      &--err {
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+      &--scss {
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #c3fabe;
+        color: #2a6817;
+      }
+    }
 
     &--inputs {
       display: flex;

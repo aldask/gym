@@ -10,7 +10,6 @@ import { useState, useEffect } from "react";
 function LetsConnect() {
   const [inputSuccess, setInputSuccess] = useState(false);
   const [inputFail, setInputFail] = useState(false);
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -41,9 +40,17 @@ function LetsConnect() {
     ) {
       setInputFail(true);
       setInputSuccess(false);
+    } else if (!validEmail()) {
+      setInputFail(true);
+      setInputSuccess(false);
     } else {
       setInputSuccess(true);
     }
+  };
+
+  const validEmail = () => {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(formData.email);
   };
 
   return (
@@ -129,6 +136,11 @@ function LetsConnect() {
                 {inputFail && formData.email === "" && (
                   <p className="form-message--error">
                     Please fill out your email
+                  </p>
+                )}
+                {inputFail && formData.email !== "" && !validEmail() && (
+                  <p className="form-message--error">
+                    Please enter a valid email address
                   </p>
                 )}
                 <InputForm
