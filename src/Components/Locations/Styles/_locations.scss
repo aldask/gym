@@ -62,6 +62,7 @@
         &:hover {
           color: $txt_black;
           background: white;
+          cursor: pointer;
         }
       }
       &--join {
@@ -74,6 +75,7 @@
           color: $txt_black;
           background-color: $bck_white;
           border: 1px solid #ffffff69;
+          cursor: pointer;
         }
       }
     }

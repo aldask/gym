@@ -38,60 +38,60 @@ function GroupTrainings() {
     <section className="group-trainings">
       <div className="group-trainings__slider">
         <SliderElement
-          urlProp="url"
+          urlProp="/"
           imageProp={ButtLift}
           contentProp="Brazil Butt lift"
         />
         <SliderElement
-          urlProp="url"
+          urlProp="/"
           imageProp={FullBody}
           contentProp="Full body tone"
         />
         <SliderElement
-          urlProp="url"
+          urlProp="/"
           imageProp={Nirvana}
           contentProp="Nirvana fitness"
         />
         <SliderElement
-          urlProp="url"
+          urlProp="/"
           imageProp={RockNcore}
           contentProp="Rock and core"
         />
         <SliderElement
-          urlProp="url"
+          urlProp="/"
           imageProp={SlowStrong}
           contentProp="Slow & strong"
         />
-        <SliderElement urlProp="url" imageProp={TRX} contentProp="TRX" />
+        <SliderElement urlProp="/" imageProp={TRX} contentProp="TRX" />
         <SliderElement
-          urlProp="url"
+          urlProp="/"
           imageProp={TRXyoga}
           contentProp="TRX yoga"
         />
         <SliderElement
-          urlProp="url"
+          urlProp="/"
           imageProp={Circle}
           contentProp="Circle Training"
         />
         <SliderElement
-          urlProp="url"
+          urlProp="/"
           imageProp={Pilates}
           contentProp="Pilates"
         />
-        <SliderElement urlProp="url" imageProp={Yoga} contentProp="Yoga" />
+        <SliderElement urlProp="/" imageProp={Yoga} contentProp="Yoga" />
         <SliderElement
-          urlProp="url"
+          urlProp="/"
           imageProp={StretchBalance}
           contentProp="Stretch & Balance"
         />
-        <SliderElement urlProp="url" imageProp={Grip} contentProp="Grip" />
+        <SliderElement urlProp="/" imageProp={Grip} contentProp="Grip" />
         <SliderElement
-          urlProp="url"
+          urlProp="/"
           imageProp={PressNback}
           contentProp="Press & Back"
         />
-        <SliderElement urlProp="url" imageProp={HIIT} contentProp="HIIT" />
-        <SliderElement urlProp="url" imageProp={Zumba} contentProp="Zumba" />
+        <SliderElement urlProp="/" imageProp={HIIT} contentProp="HIIT" />
+        <SliderElement urlProp="/" imageProp={Zumba} contentProp="Zumba" />
       </div>
     </section>
   );

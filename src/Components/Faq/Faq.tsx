@@ -35,7 +35,7 @@ function Faq() {
                   {question.ask}
                 </button>
                 {selectedQuestion === question.ask && (
-                  <p className="faq-box__question-box--answer ">
+                  <p className="faq-box__question-box--answer">
                     {question.answer}
                   </p>
                 )}

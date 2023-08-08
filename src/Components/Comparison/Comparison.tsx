@@ -35,10 +35,10 @@ function Comparison() {
       <div className="container">
         <div className="comparison-box">
           <div className="comparison-box__top">
-            <h2>
+            <h1>
               Choose your <br />
               membership
-            </h2>
+            </h1>
             <div className="comparison-box__top--selection">
               <label>Select the club below to see the options</label>
               <select name="gyms" onChange={handleSelectedGym}>

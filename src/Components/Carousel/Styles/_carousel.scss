@@ -24,6 +24,10 @@
     button {
       background: none;
       border: none;
+
+      :hover {
+        cursor: pointer;
+      }
     }
 
     &--big {
@@ -125,6 +129,7 @@
         color: $txt_black;
         background-color: $bck_grey-dark;
         border: 1px solid rgba(0, 0, 0, 0);
+        cursor: pointer;
       }
     }
   }

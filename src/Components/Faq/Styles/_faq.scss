@@ -1,6 +1,6 @@
 .faq {
   position: relative;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 .faq-box {
   &__header {
@@ -10,9 +10,11 @@
     align-items: center;
     padding-bottom: 1rem;
     gap: 1rem;
+    width: 100%;
 
     @media screen and (max-width: 1490px) {
       flex-direction: column;
+      width: 100%;
     }
 
     h2 {
@@ -60,7 +62,8 @@
       padding: 20px;
       font-size: 16px;
       color: $txt_black;
-      animation: fadeIn 0.3s ease-in-out;
+      height: auto;
+      animation: fadeIn 0.8s;
     }
   }
 }
@@ -68,10 +71,12 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-20px);
+    max-height: 0;
   }
   100% {
     opacity: 1;
     transform: translateY(0);
+    max-height: 350px;
   }
 }
