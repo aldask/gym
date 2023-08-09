@@ -25,7 +25,7 @@ function TrainersList() {
             </p>
           </div>
           <div className="trainers-box__bottom">
-            <h1>ALL TRAINERS</h1>
+            <h1>ALL COACHES</h1>
             <div className="trainers-box__bottom__trainers">
               {coaches.map((coach, index) => (
                 <div

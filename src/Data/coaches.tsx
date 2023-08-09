@@ -1,4 +1,11 @@
-import coach from "../Images/Trainers/coach.jpg";
+import Alexandra from "../Images/Trainers/Alexandra.jpeg";
+import Michael from "../Images/Trainers/Michael.jpeg";
+import Sophia from "../Images/Trainers/Sophia.jpeg";
+import William from "../Images/Trainers/William.jpg";
+import Emily from "../Images/Trainers/Emily.jpeg";
+import Daniel from "../Images/Trainers/Daniel.jpg";
+import Olivia from "../Images/Trainers/Olivia.jpeg";
+import Ethan from "../Images/Trainers/Ethan.jpg";
 
 interface CoachDetails {
   pic: string;
@@ -15,86 +22,98 @@ interface CoachDetails {
 
 export const coaches: CoachDetails[] = [
   {
-    pic: coach,
-    name: "Tom Tom",
+    pic: Alexandra,
+    name: "Alexandra Davis",
     description: {
-      info: "Tom is good",
+      info: "Alexandra is a dedicated personal trainer with a background in bodybuilding and nutrition.",
       contacts: {
-        ig: "username",
-        phone: "+55555",
-        email: "email@example.com",
+        ig: "alexandra_fit",
+        phone: "+37061111111",
+        email: "alexandra@irongym.com",
       },
     },
   },
   {
-    pic: coach,
-    name: "Tom Tom",
+    pic: Michael,
+    name: "Michael Carter",
     description: {
-      info: "Tom is good",
+      info: "Michael is a seasoned CrossFit coach who loves to challenge his clients to reach new fitness heights.",
       contacts: {
-        ig: "username",
-        phone: "+55555",
-        email: "email@example.com",
+        ig: "michael_crossfit",
+        phone: "+37062222222",
+        email: "michael@irongym.com",
       },
     },
   },
   {
-    pic: coach,
-    name: "Tom Tom",
+    pic: Sophia,
+    name: "Sophia Martinez",
     description: {
-      info: "Tom is good",
+      info: "Sophia is a certified Pilates instructor, focusing on core strength and posture improvement.",
       contacts: {
-        ig: "username",
-        phone: "+55555",
-        email: "email@example.com",
+        ig: "sophia_pilates",
+        phone: "+37063333333",
+        email: "sophia@irongym.com",
       },
     },
   },
   {
-    pic: coach,
-    name: "Tom Tom",
+    pic: William,
+    name: "William Anderson",
     description: {
-      info: "Tom is good",
+      info: "William is a dedicated running coach, helping runners of all levels achieve their marathon goals.",
       contacts: {
-        ig: "username",
-        phone: "+55555",
-        email: "email@example.com",
+        ig: "william_running",
+        phone: "+37064444444",
+        email: "william@irongym.com",
       },
     },
   },
   {
-    pic: coach,
-    name: "Tom Tom",
+    pic: Emily,
+    name: "Emily Walker",
     description: {
-      info: "Tom is good",
+      info: "Emily is a certified nutritionist who believes in a balanced and sustainable approach to healthy eating.",
       contacts: {
-        ig: "username",
-        phone: "+55555",
-        email: "email@example.com",
+        ig: "emily_nutrition",
+        phone: "+37065555555",
+        email: "emily@irongym.com",
       },
     },
   },
   {
-    pic: coach,
-    name: "Tom Tom",
+    pic: Daniel,
+    name: "Daniel Lee",
     description: {
-      info: "Tom is good",
+      info: "Daniel is a passionate group fitness instructor, bringing energy and fun to every workout session.",
       contacts: {
-        ig: "username",
-        phone: "+55555",
-        email: "email@example.com",
+        ig: "daniel_fitness",
+        phone: "+37066666666",
+        email: "daniel@irongym.com",
       },
     },
   },
   {
-    pic: coach,
-    name: "Tom Tom",
+    pic: Olivia,
+    name: "Olivia Wilson",
     description: {
-      info: "Tom is good",
+      info: "Olivia is a dedicated yoga and meditation instructor, guiding her clients towards inner peace and balance.",
       contacts: {
-        ig: "username",
-        phone: "+55555",
-        email: "email@example.com",
+        ig: "olivia_yoga",
+        phone: "+37067777777",
+        email: "olivia@irongym.com",
+      },
+    },
+  },
+  {
+    pic: Ethan,
+    name: "Ethan Turner",
+    description: {
+      info: "Ethan is an enthusiastic functional fitness coach, emphasizing full-body strength and mobility.",
+      contacts: {
+        ig: "ethan_functional",
+        phone: "+37068888888",
+        email: "ethan@irongym.com",
       },
     },
   },
