@@ -5,6 +5,7 @@ import Prices from "./Pages/Prices";
 import Trainings from "./Pages/Trainings";
 import About from "./Pages/About";
 import Career from "./Pages/Career";
+import Coaches from "./Pages/Coaches";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/trainings" element={<Trainings />} />
       <Route path="/about" element={<About />} />
       <Route path="/career" element={<Career />} />
+      <Route path="/coaches" element={<Coaches />}></Route>
     </Routes>
   );
 }
