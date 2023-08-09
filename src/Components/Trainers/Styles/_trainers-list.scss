@@ -57,6 +57,10 @@
 
     &__trainers {
       padding-bottom: 2rem;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      flex-wrap: wrap;
 
       &--trainer {
         position: relative;

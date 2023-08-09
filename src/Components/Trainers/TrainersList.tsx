@@ -1,7 +1,8 @@
-import coach from "../../Images/Trainers/coach.jpg";
 import IG from "../../Images/Trainers/IG.png";
 import Phone from "../../Images/Trainers/Phone.png";
 import Mail from "../../Images/Trainers/Mail.png";
+
+import { coaches } from "../../Data/coaches";
 
 function TrainersList() {
   return (
@@ -26,38 +27,48 @@ function TrainersList() {
           <div className="trainers-box__bottom">
             <h1>ALL TRAINERS</h1>
             <div className="trainers-box__bottom__trainers">
-              <div className="trainers-box__bottom__trainers--trainer">
-                <div className="trainers-box__bottom__trainers--trainer--img">
-                  <img src={coach} alt="coach" />
-                </div>
-                <div className="trainers-box__bottom__trainers--trainer--name">
-                  <h2>Eddie Murphy</h2>
-                </div>
-                <div className="trainers-box__bottom__trainers--trainer--details">
-                  <div className="trainers-box__bottom__trainers--trainer--details--info">
-                    <h2>Description</h2>
-                    <p>
-                      coach is good dudecoach is good dudecoach is good
-                      dudecoach is good dude
-                    </p>
+              {coaches.map((coach, index) => (
+                <div
+                  key={index}
+                  className="trainers-box__bottom__trainers--trainer"
+                >
+                  <div className="trainers-box__bottom__trainers--trainer--img">
+                    <img src={coach.pic} alt={coach.name} />
                   </div>
-                  <div className="trainers-box__bottom__trainers--trainer--details--contacts">
-                    <h2>Contacts</h2>
-                    <div className="trainers-box__bottom__trainers--trainer--details--contacts--ig">
-                      <img src={IG} alt="ig" />
-                      <a href="instagram.com/username">eddie.murphy</a>
+                  <div className="trainers-box__bottom__trainers--trainer--name">
+                    <h2>{coach.name}</h2>
+                  </div>
+                  <div className="trainers-box__bottom__trainers--trainer--details">
+                    <div className="trainers-box__bottom__trainers--trainer--details--info">
+                      <h2>Description</h2>
+                      <p>{coach.description.info}</p>
                     </div>
-                    <div className="trainers-box__bottom__trainers--trainer--details--contacts--phone">
-                      <img src={Phone} alt="phone" />
-                      <a href="tel:+3706112233">+3706112233</a>
-                    </div>
-                    <div className="trainers-box__bottom__trainers--trainer--details--contacts--email">
-                      <img src={Mail} alt="mail" />
-                      <a href="mailto:azuolas@gmail.com">azuolas@gmail.com</a>
+                    <div className="trainers-box__bottom__trainers--trainer--details--contacts">
+                      <h2>Contacts</h2>
+                      <div className="trainers-box__bottom__trainers--trainer--details--contacts--ig">
+                        <img src={IG} alt="ig" />
+                        <a
+                          href={`https://instagram.com/${coach.description.contacts.ig}`}
+                        >
+                          {coach.description.contacts.ig}
+                        </a>
+                      </div>
+                      <div className="trainers-box__bottom__trainers--trainer--details--contacts--phone">
+                        <img src={Phone} alt="phone" />
+                        <a href={`tel:${coach.description.contacts.phone}`}>
+                          {coach.description.contacts.phone}
+                        </a>
+                      </div>
+                      <div className="trainers-box__bottom__trainers--trainer--details--contacts--email">
+                        <img src={Mail} alt="mail" />
+                        <a href={`mailto:${coach.description.contacts.email}`}>
+                          {coach.description.contacts.email}
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
