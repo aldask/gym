@@ -16,7 +16,7 @@ function Faq() {
       <div className="container">
         <div className="faq-box">
           <div className="faq-box__header">
-            <h2>WE’VE GOT ANSWERS</h2>
+            <h1>WE’VE GOT ANSWERS</h1>
             <p>
               If you can’t find what you’re looking for, please{" "}
               <span>

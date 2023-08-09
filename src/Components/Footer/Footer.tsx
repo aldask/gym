@@ -30,7 +30,7 @@ function Footer() {
               <ul>
                 <li className="footer-box__top--1col--title">Trainings</li>
                 <li>
-                  <Link to="/" onClick={handleLinkClick}>
+                  <Link to="/trial" onClick={handleLinkClick}>
                     Free trial training
                   </Link>
                 </li>
