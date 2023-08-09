@@ -1,14 +1,14 @@
 import Footer from "../Components/Footer/Footer";
 import Navbar from "../Components/Navbar/Navbar";
-import TrainersList from "../Components/Trainers/TrainersList";
+import CoachesList from "../Components/Coaches/CoachesList";
 
-function Trainers() {
+function Coaches() {
   return (
     <>
       <Navbar />
-      <TrainersList />
+      <CoachesList />
       <Footer />
     </>
   );
 }
-export default Trainers;
+export default Coaches;

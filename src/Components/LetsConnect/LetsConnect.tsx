@@ -68,6 +68,9 @@ function LetsConnect() {
                   <FontAwesomeIcon icon={faSquareEnvelope} />
                 </div>
                 <div className="connect-box__bottom--side1--email--button">
+                  <p>
+                    <span className="strong">Email</span>
+                  </p>
                   <a href="mailto:hello@irongym.com">hello@irongym.com</a>
                 </div>
               </div>
@@ -83,7 +86,9 @@ function LetsConnect() {
                     <p>I-V 8:00-21:00</p>
                     <p>VI-VII 10:00-15:00</p>
                   </div>
-                  <a href="tel:86123">86123</a>
+                  <a href="tel:+37060000000">
+                    <span className="strong">+37060000000</span>
+                  </a>
                 </div>
               </div>
               <div className="connect-box__bottom--side1--company">

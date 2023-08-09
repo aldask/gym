@@ -4,7 +4,7 @@ import Mail from "../../Images/Trainers/Mail.png";
 
 import { coaches } from "../../Data/coaches";
 
-function TrainersList() {
+function CoachesList() {
   return (
     <section className="trainers">
       <div className="trainers-hero-img">
@@ -76,4 +76,4 @@ function TrainersList() {
     </section>
   );
 }
-export default TrainersList;
+export default CoachesList;

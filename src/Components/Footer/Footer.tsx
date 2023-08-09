@@ -40,8 +40,8 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/trainers" onClick={handleLinkClick}>
-                    All trainers
+                  <Link to="/coaches" onClick={handleLinkClick}>
+                    All coaches
                   </Link>
                 </li>
               </ul>
