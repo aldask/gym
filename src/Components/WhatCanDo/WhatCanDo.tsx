@@ -16,11 +16,18 @@ function WhatCanDo() {
           </div>
           <div className="what-can-do__box__image">
             <img src={What} alt="what-you-can-do"></img>
-            <h2 className="what-can-do__box__image--box">COME TOGETHER
-WITH A FRIEND</h2>
-            {/* <h2>box2</h2>
-            <h2>box3</h2>
-            <h2>box4</h2> */}
+            <h2 className="what-can-do__box__image--box1">
+              COME TOGETHER WITH A FRIEND
+            </h2>
+            <h2 className="what-can-do__box__image--box2">
+              ATTEND ANY GROUP TRAINING
+            </h2>
+            <h2 className="what-can-do__box__image--box3">
+              VISIT ANY CLUB 1 TIME
+            </h2>
+            <h2 className="what-can-do__box__image--box4">
+              EXERCISE IN THE GYM
+            </h2>
           </div>
         </div>
       </div>
