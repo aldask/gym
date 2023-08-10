@@ -16,6 +16,11 @@ function WhatCanDo() {
           </div>
           <div className="what-can-do__box__image">
             <img src={What} alt="what-you-can-do"></img>
+            <h2 className="what-can-do__box__image--box">COME TOGETHER
+WITH A FRIEND</h2>
+            {/* <h2>box2</h2>
+            <h2>box3</h2>
+            <h2>box4</h2> */}
           </div>
         </div>
       </div>
