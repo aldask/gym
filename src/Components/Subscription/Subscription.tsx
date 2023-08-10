@@ -4,8 +4,7 @@ function Subscription() {
   const [email, setEmail] = useState("");
   const [noEmail, setNoEmail] = useState(false);
   const [okEmail, setOkEmail] = useState(false);
-  const [subscriptionSuccess, setSubscriptionSuccess] =
-    useState<boolean>(false);
+  const [subscriptionSuccess, setSubscriptionSuccess] = useState(false);
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newEmail = e.target.value;
