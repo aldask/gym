@@ -2,11 +2,11 @@
   background: linear-gradient(135deg, #ff4e50 0%, #fc913a 100%);
   display: flex;
   align-items: center;
-  padding: 7rem 0 5rem 0;
+  padding: 7rem 0 3rem 0;
   overflow: hidden;
 
   @media screen and (max-width: 575px) {
-    padding: 0 0 5rem 0;
+    padding: 0 0 3rem 0;
   }
 
   .trial-box {
@@ -90,7 +90,9 @@
           background-color: #ff373a;
           color: $txt_white;
           font-weight: 600;
+          width: 100%;
           border: none;
+          outline: none;
           border-radius: 5px;
           cursor: pointer;
           transition: 0.2s ease-in-out;
@@ -102,9 +104,14 @@
       }
 
       &--msgs {
-        margin-top: 5px;
+        margin-top: 20px;
         font-size: 1.2rem;
         font-weight: 700;
+
+        @media screen and (max-width: 470px) {
+          align-self: center;
+          text-align: center;
+        }
 
         &--err {
           color: #680000;
