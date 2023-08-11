@@ -30,7 +30,7 @@ function Footer() {
               <ul>
                 <li className="footer-box__top--1col--title">Trainings</li>
                 <li>
-                  <Link to="/" onClick={handleLinkClick}>
+                  <Link to="/trial" onClick={handleLinkClick}>
                     Free trial training
                   </Link>
                 </li>
@@ -52,8 +52,8 @@ function Footer() {
                   Additional info
                 </li>
                 <li>
-                  <Link to="/" onClick={handleLinkClick}>
-                    All Clubs
+                  <Link to="/gyms" onClick={handleLinkClick}>
+                    All Gyms
                   </Link>
                 </li>
                 <li>
@@ -62,8 +62,8 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" onClick={handleLinkClick}>
-                    News & Blog
+                  <Link to="/news" onClick={handleLinkClick}>
+                    News
                   </Link>
                 </li>
               </ul>
@@ -101,13 +101,13 @@ function Footer() {
           <div className="footer-box__bottom">
             <div className="footer-box__bottom--1row">
               <p>© Iron Gym. {currentYear}</p>
-              <Link to="/" onClick={handleLinkClick}>
+              <Link to="/terms" onClick={handleLinkClick}>
                 Terms of Services
               </Link>
-              <Link to="/" onClick={handleLinkClick}>
+              <Link to="/privacypolicy" onClick={handleLinkClick}>
                 Privacy Policy
               </Link>
-              <Link to="/" onClick={handleLinkClick}>
+              <Link to="/cookies" onClick={handleLinkClick}>
                 Cookie Policy
               </Link>
             </div>

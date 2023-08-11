@@ -1,0 +1,170 @@
+.trial {
+  background: linear-gradient(135deg, #ff4e50 0%, #fc913a 100%);
+  display: flex;
+  align-items: center;
+  padding: 7rem 0 3rem 0;
+  overflow: hidden;
+
+  @media screen and (max-width: 575px) {
+    padding: 0 0 3rem 0;
+  }
+
+  .trial-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+
+    &__side1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-right: 2rem;
+      flex: 1;
+      flex-basis: 50%;
+
+      &--title {
+        text-transform: uppercase;
+        font-size: 3.75rem;
+        margin-bottom: 1.5rem;
+        inline-size: 100%;
+        color: $txt_white;
+
+        @media screen and (max-width: 560px) {
+          font-size: 2.25rem;
+        }
+      }
+
+      &--text {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        color: $txt_white;
+
+        a {
+          font-weight: bold;
+          text-decoration: none;
+          color: $txt_minBlack;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      @media screen and (max-width: 990px) {
+        padding: 0;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      &--sub {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        overflow: hidden;
+
+        @media screen and (max-width: 470px) {
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+          flex-direction: column;
+        }
+
+        &--input {
+          padding: 1rem 1.2rem;
+          border: 1px solid $bck_grey-dark;
+          border-radius: 5px;
+          background-color: $bck_grey;
+          outline: none;
+          width: 100%;
+          font-size: 1rem;
+          color: $txt_white;
+        }
+
+        &--submit {
+          padding: 1rem;
+          background-color: #ff373a;
+          color: $txt_white;
+          font-weight: 600;
+          width: 100%;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+
+          &:hover {
+            background-color: #bb0306;
+          }
+        }
+      }
+
+      &--msgs {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        font-weight: 700;
+
+        @media screen and (max-width: 470px) {
+          align-self: center;
+          text-align: center;
+        }
+
+        &--err {
+          color: #680000;
+          font-size: 1.1rem;
+        }
+        &--scss {
+          color: #006300;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    &__side2 {
+      display: flex;
+      justify-content: center;
+      flex-basis: 70%;
+      width: 55vw;
+      height: 500px;
+
+      &--image {
+        min-width: 80%;
+        max-width: 100%;
+        height: 100%;
+        background-position: center;
+        background-image: url("../../../Images/Trial/Trial1.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    @media screen and (max-width: 990px) {
+      flex-direction: column-reverse;
+
+      &__side2 {
+        display: flex;
+        width: 100vw;
+        height: 350px;
+
+        &--image {
+          background-image: url("../../../Images/Trial/Trial2.jpg");
+          background-size: cover;
+          height: 350px;
+          width: 100%;
+
+          @media screen and (max-width: 575px) {
+            max-height: 150px;
+          }
+        }
+      }
+
+      & {
+        padding: 0;
+      }
+    }
+  }
+}
