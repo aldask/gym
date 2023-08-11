@@ -15,6 +15,10 @@
 @import "../Components/Comparison/Styles/comparison";
 @import "../Components/LetsConnect/Styles/lets-connect";
 @import "../Components/Faq/Styles/faq";
+@import "../Components/Career/Styles/career-content";
+@import "../Components/Coaches/Styles/coaches-list";
+@import "../Components/TrialHero/Styles/trial-hero";
+@import "../Components/WhatCanDo/Styles/what-can-do";
 
 //Global
 body {
@@ -54,6 +58,11 @@ p {
   background-color: $bck_white;
   color: $txt_black;
   padding: 5px 20px;
+}
+.background-v1 {
+  background-color: $bck_white;
+  color: $txt_black;
+  padding: 5px 10px;
 }
 .strong {
   font-weight: 700;

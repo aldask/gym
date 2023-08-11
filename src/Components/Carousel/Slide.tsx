@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface SlideProps {
   item: {
@@ -11,6 +12,10 @@ interface SlideProps {
 
 function Slide({ item }: SlideProps) {
   const { locationPic, gymName, gymStreet, gymPerks } = item;
+
+  function handleLinkClick() {
+    window.scrollTo(0, 0);
+  }
 
   return (
     <div className="slide">
@@ -26,7 +31,9 @@ function Slide({ item }: SlideProps) {
           <p>{gymPerks}</p>
         </div>
         <div className="slide__content--about">
-          <button>View club prices</button>
+          <Link to="/prices" onClick={handleLinkClick}>
+            <button>View club prices</button>
+          </Link>
         </div>
       </div>
     </div>
