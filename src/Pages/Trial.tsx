@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import TrialContent from "../Components/TrialHero/TrialHero";
 import WhyUs from "../Components/WhyUs/WhyUs";
 import WhatCanDo from "../Components/WhatCanDo/WhatCanDo";
-import Faq from "../Components/Faq/Faq";
+import { FaqForTrial } from "../Components/Faq/Faq";
 import Subscription from "../Components/Subscription/Subscription";
 
 function Trial() {
@@ -13,7 +13,7 @@ function Trial() {
       <TrialContent />
       <WhyUs />
       <WhatCanDo />
-      <Faq />
+      <FaqForTrial />
       <Subscription />
       <Footer />
     </>

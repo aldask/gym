@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { faqContent } from "../../Data/faq";
+import { trial } from "../../Data/trial";
+import Benefit from "../../Images/Misc/benefit_logo.png";
 
-function Faq() {
+export function FaqForPrice() {
   const [selectedQuestion, setSelectedQuestion] = useState("");
 
   const handleQuestion = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -48,4 +50,43 @@ function Faq() {
   );
 }
 
-export default Faq;
+export function FaqForTrial() {
+  const [selectedQuestion, setSelectedQuestion] = useState("");
+
+  const handleQuestion = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const clickedQuestion = e.currentTarget.value;
+    setSelectedQuestion((prevSelectedQuestion) =>
+      prevSelectedQuestion === clickedQuestion ? "" : clickedQuestion
+    );
+  };
+
+  return (
+    <section className="faq">
+      <div className="container">
+        <div className="faq-box">
+          <div className="faq-box__header">
+            <h1>HOW TO REGISTER?</h1>
+          </div>
+          <div className="faq-box__question-box">
+            {trial.map((question) => (
+              <div
+                key={question.ask}
+                className="faq-box__question-box--question"
+              >
+                <button onClick={handleQuestion} value={question.ask}>
+                  <img src={Benefit} alt="" />
+                  {question.ask}
+                </button>
+                {selectedQuestion === question.ask && (
+                  <p className="faq-box__question-box--answer">
+                    {question.answer}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

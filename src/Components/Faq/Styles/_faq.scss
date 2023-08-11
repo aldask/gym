@@ -44,7 +44,12 @@
 
     &--question {
       width: 100%;
+
       button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
         width: 100%;
         cursor: pointer;
         border: none;
@@ -61,7 +66,6 @@
       padding: 20px;
       font-size: 16px;
       color: $txt_black;
-      height: 10%;
       animation: fadeIn 1s;
     }
   }
@@ -69,7 +73,7 @@
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: 0.5;
     transform: translateY(-20px);
     max-height: 0;
   }

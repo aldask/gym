@@ -59,7 +59,7 @@
     &--box1 {
       top: 50%;
       left: 50%;
-      transform: translate(50%, 160%);
+      transform: translate(60%, 160%);
     }
     &--box2 {
       top: 50%;
@@ -77,7 +77,7 @@
       transform: translate(50%, -290%);
     }
 
-    @media screen and (max-width: 835px) {
+    @media screen and (max-width: 840px) {
       &--box1,
       &--box2,
       &--box3,
