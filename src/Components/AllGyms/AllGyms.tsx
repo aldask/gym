@@ -1,5 +1,5 @@
 import React from "react";
-import { slides } from "../../Data/locationsData";
+import { slides } from "../../Data/locationsData"; // Make sure the path is accurate
 
 function AllGyms() {
   return (
@@ -14,7 +14,7 @@ function AllGyms() {
       <div className="container">
         <div className="all-gyms-box">
           <div className="all-gyms-box__top">
-            <h1>FIND GYM THAT SUITS YOU BEST</h1>
+            <h1>FIND A GYM THAT SUITS YOU BEST</h1>
             <p>
               A variety of locations in Lithuania. Iron Gym clubs are situated
               in easy-to-find public places with 24/7 access.
@@ -25,6 +25,15 @@ function AllGyms() {
             <div className="all-gyms-box__bottom__gyms">
               {slides.map((gym, index) => (
                 <div key={index} className="all-gyms-box__bottom__gyms--gym">
+                  <div className="all-gyms-box__bottom__gyms--gym--main">
+                    <div className="all-gyms-box__bottom__gyms--gym--main--img">
+                      <img src={gym.locationPic} alt={gym.gymName} />
+                    </div>
+                    <div className="all-gyms-box__bottom__gyms--gym--main--name">
+                      <h2>{gym.gymName}</h2>
+                      <p>{gym.gymStreet}</p>
+                    </div>
+                  </div>
                   <div className="all-gyms-box__bottom__gyms--gym--details">
                     <div className="all-gyms-box__bottom__gyms--gym--details--info">
                       <h2>Description</h2>
@@ -35,15 +44,11 @@ function AllGyms() {
                       <p>{gym.gymPerks}</p>
                     </div>
                     <div className="all-gyms-box__bottom__gyms--gym--details--prices">
-                      <h2>Plan prices starting from: <span>{gym.plans[0].Price}</span></h2>
+                      <h2>
+                        Plan prices starting from:{" "}
+                        <span>€{gym.plans[0].Price}</span>
+                      </h2>
                     </div>
-                  </div>
-                  <div className="all-gyms-box__bottom__gyms--gym--img">
-                    <img src={gym.locationPic} alt={gym.gymName} />
-                  </div>
-                  <div className="all-gyms-box__bottom__gyms--gym--name">
-                    <h2>{gym.gymName}</h2>
-                    <p>{gym.gymStreet}</p>
                   </div>
                 </div>
               ))}
