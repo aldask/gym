@@ -8,6 +8,7 @@ import Career from "./Pages/Career";
 import Coaches from "./Pages/Coaches";
 import Trial from "./Pages/Trial";
 import Gyms from "./Pages/Gyms";
+import News from "./Pages/News";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/coaches" element={<Coaches />}></Route>
       <Route path="/Trial" element={<Trial />}></Route>
       <Route path="/Gyms" element={<Gyms />}></Route>
+      <Route path="/News" element={<News />}></Route>
     </Routes>
   );
 }
