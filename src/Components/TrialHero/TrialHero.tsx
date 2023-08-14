@@ -38,8 +38,8 @@ function TrialContent() {
         <div className="trial-box">
           <div className="trial-box__side1">
             <h1 className="trial-box__side1--title ">
-              GET YOUR FIRST TRIAL TRAINING{" "}
-              <span className="background-v1">FOR FREE</span>
+              GET YOUR FIRST TRIAL TRAINING FOR{" "}
+              <span className="background-v1">FREE</span>
             </h1>
             <p className="trial-box__side1--text">
               By submitting this free training form, you agree to receive

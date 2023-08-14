@@ -105,12 +105,18 @@
           padding: 1rem 1.5rem;
           font-size: 1rem;
           border: none;
+          outline: none;
           border-bottom: 1px solid rgba(0, 0, 0, 0.384);
           font-family: $text-font;
         }
 
         textarea::placeholder {
           font-family: $text-font;
+        }
+        &--box {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
         }
       }
 
@@ -138,20 +144,16 @@
 .form-message {
   &--ok {
     display: flex;
-    border-radius: 10px;
-    font-size: 1.05rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 800;
     padding: 15px 15px;
-    background-color: #c3fabe;
-    color: #2a6817;
+    color: #229100;
   }
   &--error {
     display: flex;
-    border-radius: 10px;
     font-size: 1.1rem;
-    font-weight: 500;
-    padding: 10px 22px;
-    background-color: #f8d7da;
-    color: #721c24;
+    font-weight: 800;
+    padding: 0 0 15px 22px;
+    color: #db0318;
   }
 }
