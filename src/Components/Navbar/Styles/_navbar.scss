@@ -41,6 +41,7 @@
   &__links {
     display: flex;
     align-items: center;
+    text-align: center;
 
     &--text {
       text-decoration: none;
@@ -82,6 +83,7 @@
       flex-direction: column;
       list-style-type: none;
       align-items: center;
+      text-align: center;
       justify-content: center;
       gap: 1rem;
       padding: 1rem;
@@ -113,7 +115,7 @@
         display: flex;
         cursor: pointer;
         font-size: 1.3rem;
-        color: $txt_white;;
+        color: $txt_white;
       }
 
       @media screen and (max-width: 575px) {

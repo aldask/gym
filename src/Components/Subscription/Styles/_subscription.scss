@@ -33,16 +33,14 @@
       margin-bottom: 1.5rem;
 
       &--err {
-        padding: 15px;
-        border-radius: 10px;
-        background-color: #f8d7da;
-        color: #721c24;
+        padding: 15px 0 0 0;
+        font-weight: 800;
+        color: #db0318;
       }
       &--scss {
-        padding: 15px;
-        border-radius: 10px;
-        background-color: #c3fabe;
-        color: #2a6817;
+        padding: 15px 0 0 0;
+        font-weight: 800;
+        color: #229100;
       }
     }
 
