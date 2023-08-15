@@ -136,7 +136,7 @@ function LetsConnect() {
                     type="email"
                     name="email"
                     required
-                    placeholder="your@provider.com"
+                    placeholder="your-email@provider.com"
                     minLength={3}
                     maxLength={36}
                     onChange={handleForm}
