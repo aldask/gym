@@ -113,70 +113,78 @@ function LetsConnect() {
                 </p>
               )}
               <form className="connect-box__bottom--side2--form">
-                <InputForm
-                  label="Name"
-                  type="text"
-                  name="name"
-                  required
-                  placeholder="Enter Your Name"
-                  minLength={3}
-                  maxLength={36}
-                  onChange={handleForm}
-                />
-                {inputFail && formData.name === "" && (
-                  <p className="form-message--error">
-                    Please fill out your name
-                  </p>
-                )}
-                <InputForm
-                  label="Email"
-                  type="email"
-                  name="email"
-                  required
-                  placeholder="your@provider.com"
-                  minLength={3}
-                  maxLength={36}
-                  onChange={handleForm}
-                />
-                {inputFail && formData.email === "" && (
-                  <p className="form-message--error">
-                    Please fill out your email
-                  </p>
-                )}
-                {inputFail && formData.email !== "" && !validEmail() && (
-                  <p className="form-message--error">
-                    Please enter a valid email address
-                  </p>
-                )}
-                <InputForm
-                  label="Phone Number"
-                  type="tel"
-                  name="telnumber"
-                  required
-                  placeholder="+3706..."
-                  pattern="^\+3706[0-9]{8}$"
-                  minLength={12}
-                  maxLength={12}
-                  onChange={handleForm}
-                />
-                {inputFail && formData.telnumber === "" && (
-                  <p className="form-message--error">
-                    Please fill out your phone number
-                  </p>
-                )}
-                <label>Message</label>
-                <textarea
-                  maxLength={255}
-                  placeholder="Enter Your Message"
-                  required
-                  name="message"
-                  onChange={handleForm}
-                />
-                {inputFail && formData.message === "" && (
-                  <p className="form-message--error">
-                    Please write your question
-                  </p>
-                )}
+                <div className="connect-box__bottom--side2--form--box">
+                  <InputForm
+                    label="Name"
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Enter Your Name"
+                    minLength={3}
+                    maxLength={36}
+                    onChange={handleForm}
+                  />
+                  {inputFail && formData.name === "" && (
+                    <p className="form-message--error">
+                      Please fill out your name
+                    </p>
+                  )}
+                </div>
+                <div className="connect-box__bottom--side2--form--box">
+                  <InputForm
+                    label="Email"
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="your-email@provider.com"
+                    minLength={3}
+                    maxLength={36}
+                    onChange={handleForm}
+                  />
+                  {inputFail && formData.email === "" && (
+                    <p className="form-message--error">
+                      Please fill out your email
+                    </p>
+                  )}
+                  {inputFail && formData.email !== "" && !validEmail() && (
+                    <p className="form-message--error">
+                      Please enter a valid email address
+                    </p>
+                  )}
+                </div>
+                <div className="connect-box__bottom--side2--form--box">
+                  <InputForm
+                    label="Phone Number"
+                    type="tel"
+                    name="telnumber"
+                    required
+                    placeholder="+3706..."
+                    pattern="^\+3706[0-9]{8}$"
+                    minLength={12}
+                    maxLength={12}
+                    onChange={handleForm}
+                  />
+                  {inputFail && formData.telnumber === "" && (
+                    <p className="form-message--error">
+                      Please fill out your phone number
+                    </p>
+                  )}
+                </div>
+                <div className="connect-box__bottom--side2--form--box">
+                  <label>Message</label>
+                  <textarea
+                    maxLength={255}
+                    placeholder="Enter Your Message"
+                    required
+                    name="message"
+                    onChange={handleForm}
+                  />
+                  {inputFail && formData.message === "" && (
+                    <p className="form-message--error">
+                      Please write your question
+                    </p>
+                  )}
+                </div>
               </form>
               <button onClick={handleSubmit}>Contact Us</button>
             </div>

@@ -83,6 +83,10 @@
           width: 100%;
           font-size: 1rem;
           color: $txt_white;
+
+          &::placeholder {
+            color: $txt_white;
+          }
         }
 
         &--submit {

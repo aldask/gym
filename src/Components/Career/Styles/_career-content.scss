@@ -49,17 +49,20 @@
 
       img {
         width: 550px;
-        height: 100%;
-        object-fit: cover;
+        height: 370px;
+        object-fit: fill;
 
         @media screen and (max-width: 595px) {
           width: 470px;
+          height: 350px;
         }
         @media screen and (max-width: 505px) {
-          width: 350px;
+          width: 380px;
+          height: 300px;
         }
         @media screen and (max-width: 395px) {
-          width: 275px;
+          width: 310px;
+          height: 230px;
         }
       }
     }

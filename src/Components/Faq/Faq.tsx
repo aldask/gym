@@ -31,16 +31,20 @@ export function FaqForPrice() {
             {faqContent.map((question) => (
               <div
                 key={question.ask}
-                className="faq-box__question-box--question"
+                className={`faq-box__question-box--question ${
+                  selectedQuestion === question.ask ? "active" : ""
+                }`}
               >
                 <button onClick={handleQuestion} value={question.ask}>
                   {question.ask}
                 </button>
-                {selectedQuestion === question.ask && (
-                  <p className="faq-box__question-box--answer">
-                    {question.answer}
-                  </p>
-                )}
+                <p
+                  className={`faq-box__question-box--answer ${
+                    selectedQuestion === question.ask ? "active" : ""
+                  }`}
+                >
+                  {question.answer}
+                </p>
               </div>
             ))}
           </div>
@@ -66,22 +70,33 @@ export function FaqForTrial() {
         <div className="faq-box">
           <div className="faq-box__header">
             <h1>HOW TO REGISTER?</h1>
+            <p>
+              If you can’t find what you’re looking for, please{" "}
+              <span>
+                <a href="mailto: hello@irongym.com">contact us</a>
+              </span>
+              .
+            </p>
           </div>
           <div className="faq-box__question-box">
             {trial.map((question) => (
               <div
                 key={question.ask}
-                className="faq-box__question-box--question"
+                className={`faq-box__question-box--question ${
+                  selectedQuestion === question.ask ? "active" : ""
+                }`}
               >
                 <button onClick={handleQuestion} value={question.ask}>
                   <img src={Benefit} alt="" />
                   {question.ask}
                 </button>
-                {selectedQuestion === question.ask && (
-                  <p className="faq-box__question-box--answer">
-                    {question.answer}
-                  </p>
-                )}
+                <p
+                  className={`faq-box__question-box--answer ${
+                    selectedQuestion === question.ask ? "active" : ""
+                  }`}
+                >
+                  {question.answer}
+                </p>
               </div>
             ))}
           </div>

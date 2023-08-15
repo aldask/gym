@@ -1,7 +1,10 @@
-import { useState } from "react";
 import Carousel from "../Carousel/Carousel";
+import { Link } from "react-router-dom";
 
 function Locations() {
+  function handleLinkClick() {
+    window.scrollTo(0, 0);
+  }
 
   return (
     <section className="locations">
@@ -16,12 +19,16 @@ function Locations() {
               easy-to-find public places with 24/7 access.
             </p>
             <div className="locations__box__side1__buttons">
-              <button className="locations__box__side1__buttons--explore">
-                Explore
-              </button>
-              <button className="locations__box__side1__buttons--join">
-                Join Us
-              </button>
+              <Link to="/gyms" onClick={handleLinkClick}>
+                <button className="locations__box__side1__buttons--explore">
+                  Explore
+                </button>
+              </Link>
+              <Link to="/" onClick={handleLinkClick}>
+                <button className="locations__box__side1__buttons--join">
+                  Join Us
+                </button>
+              </Link>
             </div>
           </div>
           <div className="locations__box__side2">
