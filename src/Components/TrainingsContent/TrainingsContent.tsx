@@ -1,69 +1,32 @@
 import React, { useState } from "react";
+import { coaches } from "../../Data/coaches";
+import { slides } from "../../Data/locationsData";
 
 function TrainingsContent() {
-  // TESTING CODE FOR GENERATING RANDOM TRAININGS ON RANDOM DAYS AT RANDOM TIMES
-  const sampleApiDays = [
-    "2023-08-16",
-    "2023-08-17",
-    "2023-08-18",
-    "2023-08-19",
-    "2023-08-20",
-    "2023-08-21",
-    "2023-08-22",
-    "2023-08-23",
-    "2023-08-24",
-    "2023-08-25",
-    "2023-08-25",
-    "2023-08-25",
-    "2023-08-25",
-  ];
+  // Get dates from today
+  function getDates(n: number) {
+    const result = [];
 
-  const generateRandomTrainings = () => {
-    const times = [
-      "08:00",
-      "09:00",
-      "10:00",
-      "11:00",
-      "12:00",
-      "13:00",
-      "14:00",
-      "15:00",
-      "16:00",
-      "17:00",
-      "18:00",
-      "19:00",
-      "20:00",
-    ];
+    for (let i = 1; i <= n; i++) {
+      const currentDate = new Date();
+      currentDate.setDate(currentDate.getDate() + i);
 
-    const maxTrainingsPerTimeSlot = 1;
+      const day = currentDate.getDate();
+      const month = currentDate.getMonth() + 1;
+      const year = currentDate.getFullYear();
 
-    const randomTrainings = [];
-
-    for (let i = 0; i < 19; i++) {
-      const randomDay =
-        sampleApiDays[Math.floor(Math.random() * sampleApiDays.length)];
-      const randomTime = times[Math.floor(Math.random() * times.length)];
-
-      const existingTrainings = randomTrainings.filter(
-        (train) => train.date === randomDay && train.time === randomTime
-      );
-
-      if (existingTrainings.length < maxTrainingsPerTimeSlot) {
-        randomTrainings.push({
-          date: randomDay,
-          time: randomTime,
-          title: `training ${i + 1}`,
-          instructor: `coach ${(i % 5) + 1}`,
-        });
-      }
+      const fullDate = `${year}-${month}-${day}`;
+      result.push(fullDate);
     }
 
-    return randomTrainings;
-  };
+    return result;
+  }
 
-  const [trainings, setTrainings] = useState(generateRandomTrainings());
+  const dates = getDates(20);
 
   const timeSlots = [
+    "06:00",
+    "07:00",
     "08:00",
     "09:00",
     "10:00",
@@ -78,6 +41,65 @@ function TrainingsContent() {
     "19:00",
     "20:00",
   ];
+
+  const trainingsSet = [
+    "Brazil Butt lift",
+    "Full body tone",
+    "Nirvana fitness",
+    "Rock and core",
+    "Slow & strong",
+    "TRX",
+    "TRX yoga",
+    "Circle Training",
+    "Pilates",
+    "Yoga",
+    "Stretch & Balance",
+    "Grip",
+    "Press & Back",
+    "HIIT",
+    "Zumba",
+  ];
+
+  const generateRandomTrainings = () => {
+    const maxTrainingsPerTimeSlot = 1;
+
+    const randomTrainings = [];
+
+    for (let i = 0; i < 250; i++) {
+      const randomDay = dates[Math.floor(Math.random() * dates.length)];
+      const randomTime =
+        timeSlots[Math.floor(Math.random() * timeSlots.length)];
+
+      const existingTrainings = randomTrainings.filter(
+        (train) => train.date === randomDay && train.time === randomTime
+      );
+
+      if (existingTrainings.length < maxTrainingsPerTimeSlot) {
+        const randomCoachIndex = Math.floor(Math.random() * coaches.length);
+        const randomCoach = coaches[randomCoachIndex];
+
+        const randomGymsIndex = Math.floor(Math.random() * slides.length);
+        const randomGym = slides[randomGymsIndex];
+
+        const randomTrainingIndex = Math.floor(
+          Math.random() * trainingsSet.length
+        );
+        const randomTraining = trainingsSet[randomTrainingIndex];
+
+        randomTrainings.push({
+          date: randomDay,
+          time: randomTime,
+          coach: randomCoach.name,
+          location: randomGym.gymName,
+          training: randomTraining,
+        });
+      }
+    }
+
+    return randomTrainings;
+  };
+
+  const [trainings, setTrainings] = useState(generateRandomTrainings());
 
   return (
     <section className="trainings-content">
@@ -98,7 +120,7 @@ function TrainingsContent() {
                   </div>
                 ))}
               </div>
-              {sampleApiDays.map((day, dayId) => (
+              {dates.map((day, dayId) => (
                 <div key={dayId}>
                   <div className="trainings-content__box__bottom__container--time-slots--time-slot">
                     <h3>{day}</h3>
@@ -126,19 +148,18 @@ function TrainingsContent() {
                                 key={sessionId}
                                 className={`trainings-content__box__bottom__container--time-slots--time-slot--training`}
                               >
-                                <h4>Banginis</h4>
+                                <h4>{session.location}</h4>
                                 <p>
-                                  <span className="blue">FIT BOX</span>
+                                  <span className="blue">
+                                    {session.training}
+                                  </span>
                                 </p>
                                 <p>
-                                  <span className="black">08:00 - 09:00</span>
+                                  <span className="black">{session.time}</span>
                                 </p>
                                 <p>
-                                  <span className="name">Coach Name</span>
+                                  <span className="name">{session.coach}</span>
                                 </p>
-                                {/* <h4>{session.title}</h4>
-                                <p>{session.instructor}</p>
-                                <p>{session.time}</p> */}
                               </div>
                             ))}
                           </div>
