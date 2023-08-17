@@ -8,6 +8,14 @@ function TrainingsContent() {
     "2023-08-18",
     "2023-08-19",
     "2023-08-20",
+    "2023-08-21",
+    "2023-08-22",
+    "2023-08-23",
+    "2023-08-24",
+    "2023-08-25",
+    "2023-08-25",
+    "2023-08-25",
+    "2023-08-25",
   ];
 
   const generateRandomTrainings = () => {
@@ -81,8 +89,7 @@ function TrainingsContent() {
           <div className="trainings-content__box__bottom">
             <div className="trainings-content__box__bottom__container">
               <div className="trainings-content__box__bottom__container--time-slots">
-                <div className="trainings-content__box__bottom__container--time-slots--time-slot"></div>
-                {timeSlots.map((time, index) => (
+                {["", ...timeSlots].map((time, index) => (
                   <div
                     key={index}
                     className="trainings-content__box__bottom__container--time-slots--time-slot"
@@ -91,21 +98,16 @@ function TrainingsContent() {
                   </div>
                 ))}
               </div>
-
               {sampleApiDays.map((day, dayId) => (
-                <div
-                  key={dayId}
-                  className="trainings-content__box__bottom__container--day"
-                >
+                <div key={dayId}>
                   <div className="trainings-content__box__bottom__container--time-slots--time-slot">
                     <h3>{day}</h3>
                   </div>
-                  <div className="trainings-content__box__bottom__container--day--trainings">
+                  <div>
                     {timeSlots.map((time, timeId) => {
                       const matchingTrainings = trainings.filter(
                         (t) => t.date === day && t.time === time
                       );
-
                       if (matchingTrainings.length > 0) {
                         return (
                           <div
@@ -120,10 +122,23 @@ function TrainingsContent() {
                             }}
                           >
                             {matchingTrainings.map((session, sessionId) => (
-                              <div key={sessionId} className={`training`}>
-                                <h4>{session.title}</h4>
+                              <div
+                                key={sessionId}
+                                className={`trainings-content__box__bottom__container--time-slots--time-slot--training`}
+                              >
+                                <h4>Banginis</h4>
+                                <p>
+                                  <span className="blue">FIT BOX</span>
+                                </p>
+                                <p>
+                                  <span className="black">08:00 - 09:00</span>
+                                </p>
+                                <p>
+                                  <span className="name">Coach Name</span>
+                                </p>
+                                {/* <h4>{session.title}</h4>
                                 <p>{session.instructor}</p>
-                                <p>{session.time}</p>
+                                <p>{session.time}</p> */}
                               </div>
                             ))}
                           </div>
