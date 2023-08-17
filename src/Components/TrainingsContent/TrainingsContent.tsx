@@ -75,16 +75,10 @@ function TrainingsContent() {
       );
 
       if (existingTrainings.length < maxTrainingsPerTimeSlot) {
-        const randomCoachIndex = Math.floor(Math.random() * coaches.length);
-        const randomCoach = coaches[randomCoachIndex];
-
-        const randomGymsIndex = Math.floor(Math.random() * slides.length);
-        const randomGym = slides[randomGymsIndex];
-
-        const randomTrainingIndex = Math.floor(
-          Math.random() * trainingsSet.length
-        );
-        const randomTraining = trainingsSet[randomTrainingIndex];
+        const randomCoach = coaches[Math.floor(Math.random() * coaches.length)];
+        const randomGym = slides[Math.floor(Math.random() * slides.length)];
+        const randomTraining =
+          trainingsSet[Math.floor(Math.random() * trainingsSet.length)];
 
         randomTrainings.push({
           date: randomDay,
