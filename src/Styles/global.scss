@@ -27,6 +27,7 @@
 //Global
 html {
   scrollbar-color: #fe7045 #999999;
+  scroll-behavior: smooth;
 }
 html::-webkit-scrollbar {
   width: 10px;
