@@ -20,7 +20,7 @@ Welcome to the Iron Gym Inclusive Fitness Experience repository, where fitness i
 
 - **Group Training Schedule:** Keep track of up to one month's worth of scheduled group training sessions at our partner gyms. Plan your workouts and join fellow fitness enthusiasts in dynamic and supportive group settings.
 
-- **Integrated Communication:** Connect with coaches, staff, and fellow fitness enthusiasts through the seamless communication interface. Experience real-time interactions that foster a sense of community and provide support for users from all walks of life.
+- **Integrated Communication:** Connect with staff. Experience real-time interactions that foster a sense of community and provide support for all of your questions.
 
 ## Content Customization Made Easy ✏️
 
@@ -43,19 +43,22 @@ One of the standout features of this project is its user-friendly content manage
 Follow these steps to get started with the Iron Gym website:
 
 1. **Clone the repository:**
-    ```sh
-    git clone https://github.com/yourusername/your-repository.git
-    ```
+
+   ```sh
+   git clone https://github.com/aldask/gym.git
+   ```
 
 2. **Install the necessary dependencies:**
-    ```sh
-    npm install
-    ```
+
+   ```sh
+   npm install
+   ```
 
 3. **Run the project locally:**
-    ```sh
-    npm start
-    ```
+
+   ```sh
+   npm start
+   ```
 
 4. **Start exploring the Iron Gym website:**
    Open a web browser and navigate to `http://localhost:3000` to begin exploring the website.
@@ -69,5 +72,6 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 ## Author 👤
 
 Created by **Aldas Kasputis**
+
 - 💻 [GitHub](https://github.com/aldask)
 - 👨‍💼 [LinkedIn](https://www.linkedin.com/in/aldas-k-2ab99b1b4)
