@@ -25,30 +25,28 @@
 @import "../Components/TrainingsContent/Styles/trainings-content";
 
 //Global
+html {
+  scrollbar-color: #fe7045 #999999;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: #999999;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #fe7045;
+  border-radius: 5px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #d15c34;
+}
 body {
   display: flex;
   flex-direction: column;
   font-family: $text-font;
   background-color: $bck_white;
   overflow: hidden;
-  scrollbar-color: #fe7045 #999999;
-}
-
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-body::-webkit-scrollbar-track {
-  background: #999999;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #fe7045;
-  border-radius: 5px;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background-color: #d15c34;
 }
 .container {
   margin: 0 auto;
