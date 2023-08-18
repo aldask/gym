@@ -14,8 +14,6 @@ Welcome to the Iron Gym Inclusive Fitness Experience repository, where fitness i
 
 - **Responsive Accessibility:** Witness the adaptability of our design across various devices, highlighting our commitment to accessibility. The Iron Gym portfolio ensures a consistent and enjoyable experience for users, regardless of their chosen device.
 
-- **Personalized Gym Plan Comparison:** Dive into the interactive gym plan comparison tool, tailored for inclusivity. Explore how users of all backgrounds can effortlessly compare subscription options and make informed decisions that align with their individual needs.
-
 - **Gym and Subscription Comparisons:** Discover the curated gym and subscription comparison feature, simplifying the process of finding the perfect fitness center and subscription plan. This feature promotes an inclusive fitness environment that accommodates everyone.
 
 - **Expert Coaches Selections:** Engage with profiles of expert coaches and experience the seamless process of selecting a fitness mentor. See how this interactive element enhances the personalization of the fitness journey for each user.
