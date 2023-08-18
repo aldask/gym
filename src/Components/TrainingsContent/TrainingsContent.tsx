@@ -22,7 +22,7 @@ function TrainingsContent() {
     return result;
   }
 
-  const dates = getDates(20);
+  const dates = getDates(30);
 
   const timeSlots = [
     "06:00",
@@ -65,7 +65,7 @@ function TrainingsContent() {
 
     const randomTrainings = [];
 
-    for (let i = 0; i < 250; i++) {
+    for (let i = 0; i < 300; i++) {
       const randomDay = dates[Math.floor(Math.random() * dates.length)];
       const randomTime =
         timeSlots[Math.floor(Math.random() * timeSlots.length)];
