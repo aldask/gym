@@ -108,7 +108,7 @@ function TrainingsContent() {
                 {["", ...timeSlots].map((time, index) => (
                   <div
                     key={index}
-                    className="trainings-content__box__bottom__container--time-slots--time-slot"
+                    className="trainings-content__box__bottom__container--time-slots--time-slot time"
                   >
                     <h3>{time}</h3>
                   </div>
@@ -116,7 +116,7 @@ function TrainingsContent() {
               </div>
               {dates.map((day, dayId) => (
                 <div key={dayId}>
-                  <div className="trainings-content__box__bottom__container--time-slots--time-slot">
+                  <div className="trainings-content__box__bottom__container--time-slots--time-slot day">
                     <h3>{day}</h3>
                   </div>
                   <div>
@@ -143,17 +143,9 @@ function TrainingsContent() {
                                 className={`trainings-content__box__bottom__container--time-slots--time-slot--training`}
                               >
                                 <h4>{session.location}</h4>
-                                <p>
-                                  <span className="blue">
-                                    {session.training}
-                                  </span>
-                                </p>
-                                <p>
-                                  <span className="black">{session.time}</span>
-                                </p>
-                                <p>
-                                  <span className="name">{session.coach}</span>
-                                </p>
+                                <p className="blue">{session.training}</p>
+                                <p className="black">{session.time}</p>
+                                <p className="name">{session.coach}</p>
                               </div>
                             ))}
                           </div>
