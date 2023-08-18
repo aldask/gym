@@ -75,7 +75,7 @@ function Navbar() {
           </li>
           <li>
             <Link
-              to="/"
+              to="/trainings"
               className="navbar__links--text"
               onClick={handleLinkClick}
             >

@@ -30,6 +30,7 @@ body {
   flex-direction: column;
   font-family: $text-font;
   background-color: $bck_white;
+  overflow: hidden;
 }
 .container {
   margin: 0 auto;

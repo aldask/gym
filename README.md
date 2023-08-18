@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+<div align="center">
+    <img src="public/logo.png" alt="Logo">
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About the Project 🏋️‍♂️
 
-## Available Scripts
+Welcome to the Iron Gym Inclusive Fitness Experience repository, where fitness innovation meets inclusivity. This project showcases a forward-thinking approach to fitness technology, emphasizing interactive features and responsive design principles that cater to the diverse needs of every user.
 
-In the project directory, you can run:
+## Project Highlights 🌟
 
-### `npm start`
+- **Universal Design:** Immerse yourself in an inclusive fitness journey that takes into account the diverse abilities of all users. Explore how our design seamlessly adapts to different needs, creating an empowering experience for everyone.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Smooth Animations:** Experience the beauty of seamless animations that guide your interaction with the fitness platform. Discover how animations enhance the visual appeal and user engagement of the platform.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Responsive Accessibility:** Witness the adaptability of our design across various devices, highlighting our commitment to accessibility. The Iron Gym portfolio ensures a consistent and enjoyable experience for users, regardless of their chosen device.
 
-### `npm test`
+- **Personalized Gym Plan Comparison:** Dive into the interactive gym plan comparison tool, tailored for inclusivity. Explore how users of all backgrounds can effortlessly compare subscription options and make informed decisions that align with their individual needs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Gym and Subscription Comparisons:** Discover the curated gym and subscription comparison feature, simplifying the process of finding the perfect fitness center and subscription plan. This feature promotes an inclusive fitness environment that accommodates everyone.
 
-### `npm run build`
+- **Expert Coaches Selections:** Engage with profiles of expert coaches and experience the seamless process of selecting a fitness mentor. See how this interactive element enhances the personalization of the fitness journey for each user.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Group Training Schedule:** Keep track of up to one month's worth of scheduled group training sessions at our partner gyms. Plan your workouts and join fellow fitness enthusiasts in dynamic and supportive group settings.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Integrated Communication:** Connect with coaches, staff, and fellow fitness enthusiasts through the seamless communication interface. Experience real-time interactions that foster a sense of community and provide support for users from all walks of life.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Content Customization Made Easy ✏️
 
-### `npm run eject`
+One of the standout features of this project is its user-friendly content management. Easily replace and customize content by updating the provided data files. This streamlined approach empowers you to tailor the experience to your unique requirements without the need for extensive coding.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+🌐 **Live Demo:** [Here](https://gym-flax.vercel.app/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Built With 🛠️
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- ![React](https://img.shields.io/badge/React-000000?style=flat-square&logo=react)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript)
+- ![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat-square&logo=sass)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Screenshot of the Project Landing Page 📸
 
-## Learn More
+![Screenshot](public/landing.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Getting Started 🚀
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Follow these steps to get started with the Iron Gym website:
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/yourusername/your-repository.git
+    ```
+
+2. **Install the necessary dependencies:**
+    ```sh
+    npm install
+    ```
+
+3. **Run the project locally:**
+    ```sh
+    npm start
+    ```
+
+4. **Start exploring the Iron Gym website:**
+   Open a web browser and navigate to `http://localhost:3000` to begin exploring the website.
+
+Happy exploring!
+
+## License 📜
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Author 👤
+
+Created by **Aldas Kasputis**
+- 💻 [GitHub](https://github.com/aldask)
+- 👨‍💼 [LinkedIn](https://www.linkedin.com/in/aldas-k-2ab99b1b4)
