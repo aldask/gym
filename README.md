@@ -8,17 +8,17 @@ Welcome to the Iron Gym Inclusive Fitness Experience repository, where fitness i
 
 ## Project Highlights 🌟
 
-- **Universal Design:** Immerse yourself in an inclusive fitness journey that takes into account the diverse abilities of all users. Explore how our design seamlessly adapts to different needs, creating an empowering experience for everyone.
+- **Universal Design:** Immerse yourself in an inclusive fitness journey that takes into account the diverse abilities of all users. Explore how design seamlessly adapts to different needs, creating an empowering experience for everyone.
 
 - **Smooth Animations:** Experience the beauty of seamless animations that guide your interaction with the fitness platform. Discover how animations enhance the visual appeal and user engagement of the platform.
 
-- **Responsive Accessibility:** Witness the adaptability of our design across various devices, highlighting our commitment to accessibility. The Iron Gym portfolio ensures a consistent and enjoyable experience for users, regardless of their chosen device.
+- **Responsive Accessibility:** Witness the adaptability of design across various devices, highlighting commitment to accessibility. The Iron Gym portfolio ensures a consistent and enjoyable experience for users, regardless of their chosen device.
 
 - **Gym and Subscription Comparisons:** Discover the curated gym and subscription comparison feature, simplifying the process of finding the perfect fitness center and subscription plan. This feature promotes an inclusive fitness environment that accommodates everyone.
 
 - **Expert Coaches Selections:** Engage with profiles of expert coaches and experience the seamless process of selecting a fitness mentor. See how this interactive element enhances the personalization of the fitness journey for each user.
 
-- **Group Training Schedule:** Keep track of up to one month's worth of scheduled group training sessions at our partner gyms. Plan your workouts and join fellow fitness enthusiasts in dynamic and supportive group settings.
+- **Group Training Schedule:** Keep track of up to one month's worth of scheduled group training sessions at our gyms. Plan your workouts and join fellow fitness enthusiasts in dynamic and supportive group settings.
 
 - **Integrated Communication:** Connect with staff. Experience real-time interactions that foster a sense of community and provide support for all of your questions.
 
