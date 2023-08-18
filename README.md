@@ -12,7 +12,7 @@ A **Iron Gym** description.
 
 - ![React](https://img.shields.io/badge/React-000000?style=flat-square&logo=react)
 - ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript)
-- ![CSS](https://img.shields.io/badge/CSS-3-blue?style=flat-square&logo=css3)
+- ![SCSS](https://img.shields.io/badge/SCSS-3-blue?style=flat-square&logo=sass)
 
 ## Screenshot of the Project landing page 📸
 
