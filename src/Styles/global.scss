@@ -22,6 +22,7 @@
 @import "../Components/AllGyms/Styles/all-gyms";
 @import "../Components/NewsContent/Styles/news-content";
 @import "../Components/NewsContent/Styles/-news-box.scss";
+@import "../Components/TrainingsContent/Styles/trainings-content";
 
 //Global
 body {
@@ -29,6 +30,7 @@ body {
   flex-direction: column;
   font-family: $text-font;
   background-color: $bck_white;
+  overflow: hidden;
 }
 .container {
   margin: 0 auto;
