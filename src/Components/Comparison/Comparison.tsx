@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import { slides, SlideContent } from "../../Data/locationsData";
+import { gyms } from "../../Data/gymsData";
 import True from "../../Images/Misc/Ok.png";
 import False from "../../Images/Misc/No.png";
 
 function Comparison() {
-  const [selectedGymAddress, setSelectedGymAddress] = useState<SlideContent>(
-    slides[0]
-  );
+  const [selectedGymAddress, setSelectedGymAddress] = useState(gyms[0]);
 
   const handleSelectedGym = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedGymName = e.target.value;
-    const selectedGym = slides.find((gym) => gym.gymName === selectedGymName);
+    const selectedGym = gyms.find((gym) => gym.gymName === selectedGymName);
 
     if (selectedGym) {
       setSelectedGymAddress(selectedGym);
@@ -42,7 +40,7 @@ function Comparison() {
             <div className="comparison-box__top--selection">
               <label>Select the club below to see the options</label>
               <select name="gyms" onChange={handleSelectedGym}>
-                {slides.map((gym) => (
+                {gyms.map((gym) => (
                   <option key={gym.gymName} value={gym.gymName}>
                     {gym.gymName}
                   </option>

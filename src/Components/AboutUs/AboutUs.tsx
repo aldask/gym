@@ -7,7 +7,7 @@ import {
 import InputForm from "./InputForm";
 import { useState, useEffect } from "react";
 
-function LetsConnect() {
+function AboutUs() {
   const [inputSuccess, setInputSuccess] = useState(false);
   const [inputFail, setInputFail] = useState(false);
   const [formData, setFormData] = useState({
@@ -194,4 +194,5 @@ function LetsConnect() {
     </section>
   );
 }
-export default LetsConnect;
+
+export default AboutUs;

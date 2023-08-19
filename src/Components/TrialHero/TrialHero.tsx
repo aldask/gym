@@ -90,4 +90,5 @@ function TrialContent() {
     </section>
   );
 }
+
 export default TrialContent;

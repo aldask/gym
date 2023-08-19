@@ -19,4 +19,5 @@ function Trial() {
     </>
   );
 }
+
 export default Trial;

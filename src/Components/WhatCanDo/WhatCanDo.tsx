@@ -39,4 +39,5 @@ function WhatCanDo() {
     </section>
   );
 }
+
 export default WhatCanDo;

@@ -38,4 +38,5 @@ function NewsContent() {
     </section>
   );
 }
+
 export default NewsContent;

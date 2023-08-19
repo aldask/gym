@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Slide from "./Slide";
-import { slides } from "../../Data/locationsData";
+import { gyms } from "../../Data/gymsData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowCircleLeft,
@@ -12,12 +12,11 @@ const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const updateIndex = (newIndex: number) => {
-    newIndex = Math.max(0, Math.min(newIndex, slides.length - 1));
-    setActiveIndex(newIndex);
+    setActiveIndex(Math.max(0, Math.min(newIndex, gyms.length - 1)));
   };
 
-  const renderIndicators = () => {
-    return slides.map((_, index) => (
+  const renderIndicators = () =>
+    gyms.map((_, index) => (
       <button
         key={index}
         className={`carousel__indicator-button ${
@@ -28,10 +27,9 @@ const Carousel = () => {
         <FontAwesomeIcon icon={faCircleDot} />
       </button>
     ));
-  };
 
-  const isPreviousDisabled = activeIndex === 0;
-  const isNextDisabled = activeIndex === slides.length - 1;
+  const isDisabled = (change: number) =>
+    activeIndex + change < 0 || activeIndex + change >= gyms.length;
 
   return (
     <section className="carousel">
@@ -39,14 +37,14 @@ const Carousel = () => {
         className="carousel__slide-container"
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
-        {slides.map((item, index) => (
+        {gyms.map((item, index) => (
           <Slide key={index} item={item} />
         ))}
       </div>
       <div className="carousel__buttons">
         <button
           onClick={() => updateIndex(activeIndex - 1)}
-          disabled={isPreviousDisabled}
+          disabled={isDisabled(-1)}
         >
           <FontAwesomeIcon
             icon={faArrowCircleLeft}
@@ -58,7 +56,7 @@ const Carousel = () => {
 
         <button
           onClick={() => updateIndex(activeIndex + 1)}
-          disabled={isNextDisabled}
+          disabled={isDisabled(1)}
         >
           <FontAwesomeIcon
             icon={faArrowCircleRight}

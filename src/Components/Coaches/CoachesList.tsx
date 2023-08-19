@@ -1,17 +1,14 @@
 import IG from "../../Images/Trainers/IG.png";
 import Phone from "../../Images/Trainers/Phone.png";
 import Mail from "../../Images/Trainers/Mail.png";
-
 import { coaches } from "../../Data/coaches";
+import Trainers from "../../Images/Backgrounds/Trainers.png";
 
 function CoachesList() {
   return (
     <section className="trainers">
       <div className="trainers-hero-img">
-        <img
-          src="https://www.lemongym.lt/wp-content/uploads/2023/02/1440x520_trainers_5-1.png"
-          alt=""
-        />
+        <img src={Trainers} alt="coaches" />
         <h1>MEET OUR COACHES</h1>
       </div>
       <div className="container">
@@ -76,4 +73,5 @@ function CoachesList() {
     </section>
   );
 }
+
 export default CoachesList;

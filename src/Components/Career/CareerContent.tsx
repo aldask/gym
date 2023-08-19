@@ -1,8 +1,8 @@
 import Staff from "../../Images/Career/staff.png";
 import Staff1 from "../../Images/Career/staff1.jpg";
-import Icon1 from "../../Images/Career/Icon1.png"
-import Icon2 from "../../Images/Career/Icon2.png"
-import Icon3 from "../../Images/Career/Icon3.png"
+import Icon1 from "../../Images/Career/Icon1.png";
+import Icon2 from "../../Images/Career/Icon2.png";
+import Icon3 from "../../Images/Career/Icon3.png";
 import GridElement from "../WhyUs/GridElement";
 
 function CareerContent() {
@@ -22,8 +22,8 @@ function CareerContent() {
               </p>
             </div>
             <div className="career-box__top--img">
-            <img src={Staff} alt="people-group" />
-            <img src={Staff1} alt="people-group" />
+              <img src={Staff} alt="people-group" />
+              <img src={Staff1} alt="people-group" />
             </div>
           </div>
           <div className="career-box__middle">
@@ -55,4 +55,5 @@ function CareerContent() {
     </section>
   );
 }
+
 export default CareerContent;

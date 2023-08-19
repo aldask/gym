@@ -5,7 +5,7 @@ import Europa from "../Images/Locations/Europa.jpg";
 import Banginis from "../Images/Locations/Banginis.jpg";
 import Antakalnis from "../Images/Locations/Antakalnis.jpg";
 
-export interface SlideContent {
+export interface gymContent {
   locationPic: string;
   gymName: string;
   gymStreet: string;
@@ -22,7 +22,7 @@ export interface SlideContent {
   }[];
 }
 
-export const slides: SlideContent[] = [
+export const gyms: gymContent[] = [
   {
     locationPic: Savanoriai,
     gymName: "Savanoriai",
