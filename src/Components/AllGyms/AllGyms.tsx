@@ -1,14 +1,12 @@
 import React from "react";
-import { slides } from "../../Data/locationsData"; // Make sure the path is accurate
+import { gyms } from "../../Data/gymsData";
+import GymBG from "../../Images/Backgrounds/Gyms.jpg";
 
 function AllGyms() {
   return (
     <section className="all-gyms">
       <div className="all-gyms-hero-img">
-        <img
-          src="https://www.lemongym.lt/wp-content/uploads/2023/02/club-bg_1440x520_2-1.jpg"
-          alt=""
-        />
+        <img src={GymBG} alt="gym-background" />
         <h1>EXPLORE OUR GYMS</h1>
       </div>
       <div className="container">
@@ -23,7 +21,7 @@ function AllGyms() {
           <div className="all-gyms-box__bottom">
             <h1>OUR GYMS</h1>
             <div className="all-gyms-box__bottom__gyms">
-              {slides.map((gym, index) => (
+              {gyms.map((gym, index) => (
                 <div key={index} className="all-gyms-box__bottom__gyms--gym">
                   <div className="all-gyms-box__bottom__gyms--gym--main">
                     <div className="all-gyms-box__bottom__gyms--gym--main--img">

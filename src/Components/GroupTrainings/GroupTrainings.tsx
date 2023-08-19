@@ -108,7 +108,7 @@ function GroupTrainings() {
           imageProp={Zumba}
           contentProp="Zumba"
         />
-        {/* Doubled because smooth transition */}
+        {/* Doubled because of smooth transition */}
         <SliderElement
           urlProp="/trainings"
           imageProp={ButtLift}

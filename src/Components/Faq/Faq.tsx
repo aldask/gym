@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { faqContent } from "../../Data/faq";
-import { trial } from "../../Data/trial";
+import { questions, trial } from "../../Data/faq";
 import Benefit from "../../Images/Misc/benefit_logo.png";
 
 export function FaqForPrice() {
@@ -28,7 +27,7 @@ export function FaqForPrice() {
             </p>
           </div>
           <div className="faq-box__question-box">
-            {faqContent.map((question) => (
+            {questions.map((question) => (
               <div
                 key={question.ask}
                 className={`faq-box__question-box--question ${

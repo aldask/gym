@@ -1,6 +1,6 @@
 import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { slides } from "../../Data/locationsData";
+import { gyms } from "../../Data/gymsData";
 import { Icon } from "leaflet";
 import Pin from "../../Images/Maps/pin.png";
 
@@ -18,7 +18,7 @@ function Maps() {
     <section className="maps">
       <MapContainer center={[54.687157, 25.279652]} zoom={12}>
         <TileLayer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        {slides.map((marker) => (
+        {gyms.map((marker) => (
           <Marker
             position={marker.gymCord as L.LatLngTuple}
             key={marker.gymName}
