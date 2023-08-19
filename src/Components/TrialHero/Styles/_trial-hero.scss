@@ -78,15 +78,11 @@
           padding: 1rem 1.2rem;
           border: 1px solid $bck_grey-dark;
           border-radius: 5px;
-          background-color: $bck_grey;
+          background-color: $bck_white;
           outline: none;
           width: 100%;
           font-size: 1rem;
           color: $txt_white;
-
-          &::placeholder {
-            color: $txt_white;
-          }
         }
 
         &--submit {

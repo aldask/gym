@@ -1,14 +1,15 @@
 import Footer from "../Components/Footer/Footer";
 import Navbar from "../Components/Navbar/Navbar";
-import TrainingsContent from "../Components/TrainingsContent/TrainingsContent";
+import TrainingsSchedule from "../Components/TrainingsSchedule/TrainingsSchedule";
 
 function Trainings() {
   return (
     <>
       <Navbar />
-      <TrainingsContent />
+      <TrainingsSchedule />
       <Footer />
     </>
   );
 }
+
 export default Trainings;

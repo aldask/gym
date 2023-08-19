@@ -11,4 +11,5 @@ function Gyms() {
     </>
   );
 }
+
 export default Gyms;

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { coaches } from "../../Data/coaches";
-import { slides } from "../../Data/locationsData";
+import { gyms } from "../../Data/gymsData";
 
-function TrainingsContent() {
+function TrainingsSchedule() {
   // Get dates from today
   function getDates(n: number) {
     const result = [];
@@ -76,7 +76,7 @@ function TrainingsContent() {
 
       if (existingTrainings.length < maxTrainingsPerTimeSlot) {
         const randomCoach = coaches[Math.floor(Math.random() * coaches.length)];
-        const randomGym = slides[Math.floor(Math.random() * slides.length)];
+        const randomGym = gyms[Math.floor(Math.random() * gyms.length)];
         const randomTraining =
           trainingsSet[Math.floor(Math.random() * trainingsSet.length)];
 
@@ -100,7 +100,7 @@ function TrainingsContent() {
       <div className="container">
         <div className="trainings-content__box">
           <div className="trainings-content__box__top">
-            <h1>GROUP TRAINING’S SCHEDULE</h1>
+            <h1>GROUP TRAININGS SCHEDULE</h1>
           </div>
           <div className="trainings-content__box__bottom">
             <div className="trainings-content__box__bottom__container">
@@ -170,4 +170,4 @@ function TrainingsContent() {
   );
 }
 
-export default TrainingsContent;
+export default TrainingsSchedule;

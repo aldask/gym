@@ -40,4 +40,5 @@ const InputForm: React.FC<InputFormProp> = ({
     </>
   );
 };
+
 export default InputForm;

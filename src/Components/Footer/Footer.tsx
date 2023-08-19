@@ -101,13 +101,13 @@ function Footer() {
           <div className="footer-box__bottom">
             <div className="footer-box__bottom--1row">
               <p>© Iron Gym. {currentYear}</p>
-              <Link to="/terms" onClick={handleLinkClick}>
+              <Link to="/" onClick={handleLinkClick}>
                 Terms of Services
               </Link>
-              <Link to="/privacypolicy" onClick={handleLinkClick}>
+              <Link to="/" onClick={handleLinkClick}>
                 Privacy Policy
               </Link>
-              <Link to="/cookies" onClick={handleLinkClick}>
+              <Link to="/" onClick={handleLinkClick}>
                 Cookie Policy
               </Link>
             </div>
@@ -117,4 +117,5 @@ function Footer() {
     </section>
   );
 }
+
 export default Footer;
