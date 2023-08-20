@@ -50,7 +50,8 @@
           color: #646464;
 
           @media screen and (max-width: 768px) {
-            min-height: 100px;
+            min-height: 80px;
+            font-size: 14px;
           }
 
           &.time {
@@ -67,8 +68,8 @@
             min-width: 125px;
 
             @media screen and (max-width: 768px) {
-              min-height: 100px;
-              min-width: 100px;
+              min-height: 80px;
+              min-width: 80px;
             }
           }
 
@@ -89,7 +90,8 @@
               color: #333333;
 
               @media screen and (max-width: 768px) {
-                line-height: 14px;
+                line-height: 13px;
+                font-size: 14px;
               }
             }
 
@@ -100,6 +102,7 @@
 
               @media screen and (max-width: 768px) {
                 margin: 0;
+                font-size: 14px;
               }
 
               &.blue {
