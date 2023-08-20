@@ -10,8 +10,6 @@ Welcome to the Iron Gym Inclusive Fitness Experience repository, where fitness i
 
 - **Universal Design:** Platform welcomes everyone, regardless of their abilities. Design adapts to diverse needs, ensuring an empowering experience for all users.
 
-- **Engaging Animations:** Enjoy seamless animations that enhance your interaction with the platform. These animations not only guide you but also make the platform visually appealing..
-
 - **Responsive Accessibility:** Witness the adaptability of design across various devices, highlighting commitment to accessibility. The Iron Gym portfolio ensures a consistent and enjoyable experience for users, regardless of their chosen device.
 
 - **Compare Gyms and Subscriptions:** Easily find your ideal fitness center and subscription plan with curated comparison feature. Goal is to create an inclusive fitness community.
